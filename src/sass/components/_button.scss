@@ -1,5 +1,20 @@
+// використовуйте клас btn ЗАВЖДИ, якщо в вас є кнопка
+// будь-яка!
+
+// додавайте клас btn--transparent паралельно,
+// якщо вам потрібна прозора кнопка
+
+// додавайте клас btn__icon у ваш svg тег,
+// у якому ви розмістите саму іконку всередені use
+
+// все повинно працювати коректно з обома кнопками: і ховер, і фокус
+
 .btn {
   padding: 12px 34px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   font-family: $font-family;
   font-weight: 600;
@@ -12,5 +27,38 @@
   border: transparent;
   border-radius: 10px;
 
-  
+  &:hover,
+  &:focus {
+    background-color: $button-color;
+  }
+
+  &:focus {
+    color: $main-text-color;
+  }
+}
+
+.btn--transparent {
+  background-color: transparent;
+  border: 2px solid $accent-color;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    border-color: $button-color;
+  }
+
+  &:focus {
+    color: $main-text-color;
+    outline: none;
+    border: 2px solid $button-color;
+  }
+}
+
+.btn__icon {
+  margin-left: 6px;
+
+  .btn:focus &,
+  .btn--transparent:focus & {
+    fill: currentColor;
+  }
 }
