@@ -1,0 +1,76 @@
+.footer__address {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20;
+
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: $second-text-color;
+}
+
+.footer__address-item {
+  display: flex;
+  flex-direction: column;
+
+  width: 270px;
+  padding: 40px 32px;
+  background-color: $white-color;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+
+.footer__address-title {
+  width: fit-content;
+  padding: 3px 24px;
+  margin-bottom: 20px;
+
+  text-align: center;
+
+  background-color: $accent-color;
+  border-radius: 4px;
+}
+
+.footer__address-path,
+.footer__address-schedule {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 48px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -25%;
+    width: 100%;
+    height: 1px;
+    background-color: #e1e1e1;
+  }
+}
+
+.footer__address-address {
+  color: $address-color;
+}
+
+.footer__address-schedule-time {
+  color: #ababab;
+}
+
+.footer__address-contacts {
+  color: $second-text-color;
+}
+
+.footer__btn--transparent {
+  background-color: transparent;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+}

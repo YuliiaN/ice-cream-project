@@ -1,15 +1,15 @@
 .container {
-    margin: 0 auto;
-    padding: 0 15px;
-    border:1px solid black;
+  margin: 0 auto;
+  padding: 0 15px;
+  border: 1px solid black;
 
-    @include mq (mob-only) {
-        width: 480px;
-    }
-    @include mq (tab-only) {
-        width: 768px;
-    }
-    @include mq (desk) {
-        width: 1200px;
-    }
-}    
+  @include mq(mob-only) {
+    width: 480px;
+  }
+  @include mq(tab-only) {
+    width: 768px;
+  }
+  @include mq(desk) {
+    width: 1200px;
+  }
+}
