@@ -16,3 +16,9 @@
 .hero__uper {
     text-transform: uppercase;
 }
+
+.hero__list {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
