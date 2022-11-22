@@ -4,16 +4,12 @@
 
 .mobile-open .mobile-icons__icon-menu {
     display: block;
-
 }
 
 .mobile-open .mobile-icons__icon-close {
     display: none;
 }
 
-.mobile-close .mobile-icons__logo {
-    display: none;
-}
 
 .mobile-open {
     width: 32px;
@@ -23,8 +19,6 @@
     justify-content: center;
     border: none;
     margin-left: auto;
-    
-
 }
 
 .mobile-close {
@@ -33,7 +27,6 @@
     top: 16px;
     width: 32px;
     height: 32px;
-
     border: none;
     display: flex;
     align-items: center;
@@ -60,14 +53,13 @@
     left: 0;
     width: 100%;
     height: 100%;
-
+    background-color: $main-background-color;
     z-index: 1;
 
 
     &.is-hidden {
         display: flex;
         flex-direction: column;
-
         overflow: auto;
     }
 }
@@ -113,4 +105,5 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
