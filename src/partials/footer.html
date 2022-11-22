@@ -91,37 +91,41 @@
         </li>
       </ul>
     </address>
-    <button type="button" class="btn footer__btn">
-      Our Locations
-      <svg width="30" height="30">
-        <use href="./images/icons.svg#icon-arrow"></use>
-      </svg>
-    </button>
-    <button type="button" class="btn footer__btn footer__btn--transparent">
-      Franchise
-      <svg width="30" height="30">
-        <use href="./images/icons.svg#icon-video-arrow"></use>
-      </svg>
-    </button>
-    <p>homemade ice cream made</p>
-    <p>with passion</p>
-    <ul>
+    <div class="footer__btn-wrap">
+      <button type="button" class="btn footer__btn">
+        Our Locations
+        <svg width="12" height="12" class="btn__icon">
+          <use href="./images/icons.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
+      <button type="button" class="btn btn--transparent footer__btn">
+        Franchise
+        <svg width="12" height="12" class="btn__icon">
+          <use href="./images/icons.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="footer__text-wrap">
+      <p class="footer__text-first">homemade ice cream made</p>
+      <p class="footer__text-second">with passion</p>
+    </div>
+    <ul class="footer__sm-list">
       <li>
-        <a href="">
+        <a href="" class="footer__sm-link">
           <svg width="32" height="32">
             <use href="./images/icons.svg#icon-github"></use>
           </svg>
         </a>
       </li>
       <li>
-        <a href="">
+        <a href="" class="footer__sm-link">
           <svg width="32" height="32">
             <use href="./images/icons.svg#icon-telegram"></use>
           </svg>
         </a>
       </li>
       <li>
-        <a href="">
+        <a href="" class="footer__sm-link">
           <svg width="32" height="32">
             <use href="./images/icons.svg#icon-facebook"></use>
           </svg>
@@ -129,9 +133,12 @@
       </li>
     </ul>
 
-    <p>
-      Feel free to contact <a href="tel:+61(0)383766284">+61 (0) 383 766 284</a>
+    <p class="footer__tel-text">
+      Feel free to contact
+      <a href="tel:+61(0)383766284" class="footer__tel-link"
+        >+61 (0) 383 766 284</a
+      >
     </p>
-    <p>&copy; 2022 - IceCream. All Rights Reserved.</p>
+    <p class="footer__copy">&copy; 2022 - IceCream. All Rights Reserved.</p>
   </div>
 </footer>
