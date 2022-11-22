@@ -11,7 +11,7 @@
     display: none;
 }
 
-.mobile-open .mobile-icons__logo {
+.mobile-close .mobile-icons__logo {
     display: none;
 }
 
@@ -109,3 +109,8 @@
     z-index: 15;
 }
 
+.header-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
