@@ -1,5 +1,12 @@
 .footer {
+  position: relative;
+  top: -360px;
+
   padding-bottom: 62px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
 }
 
 // footer address cards
@@ -16,9 +23,6 @@
   margin-bottom: 32px;
 
   font-style: normal;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1.86;
   letter-spacing: 0.04em;
   color: $second-text-color;
 }
@@ -27,8 +31,9 @@
   display: flex;
   flex-direction: column;
 
-  width: 270px;
+  width: 280px;
   padding: 40px 32px;
+
   background-color: $white-color;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
@@ -36,9 +41,14 @@
 
 .footer__address-title {
   width: fit-content;
-  padding: 3px 24px;
+  padding: 0 24px;
   margin-bottom: 20px;
 
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   text-align: center;
 
   background-color: $accent-color;
@@ -65,14 +75,18 @@
 }
 
 .footer__address-address {
+  line-height: 1.83;
+  letter-spacing: 0.04em;
   color: $address-color;
 }
 
 .footer__address-schedule-time {
+  text-transform: uppercase;
   color: #ababab;
 }
 
 .footer__address-contacts {
+  line-height: 1.5;
   color: $second-text-color;
 }
 
@@ -89,7 +103,6 @@
   margin-bottom: 39px;
 }
 
-// button
 .footer__btn {
   width: 100%;
 }
@@ -148,8 +161,6 @@
   margin-bottom: 56px;
 
   font-weight: 700;
-  font-size: 12px;
-  line-height: 1.86;
   color: $second-text-color;
   text-align: right;
 
@@ -169,6 +180,9 @@
 }
 
 .footer__copy {
+  margin-right: auto;
+  margin-left: auto;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
