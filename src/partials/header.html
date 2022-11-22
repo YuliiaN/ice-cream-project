@@ -16,9 +16,26 @@
 
 <body>
     <header>
-        <svg class="logo" width="40px" height="37px">
-            <use href="../images/icons.svg#icon-logo"></use>
-        </svg>
+        
+        <button type="button" class="mobile-open" data-menu-open aria-expanded="false" aria-controls="mobile__menu">
+            <svg class="mobile-icons" width="32" height="32">
+                <use class="mobile-icons__icon-menu" href="./images/icons.svg#icon-menu"></use>
+            </svg>
+        </button>
+        <div class="mobile__menu" id="mobile__menu" data-menu>
+            <button type="button" class="mobile-close" data-menu-close aria-expanded="false" aria-controls="mobile__menu">
+                <svg class="mobile-icons" width="32" height="32">
+                    <use class="mobile-icons__icon-close" href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">How it’s made?</a></li>
+                <li><a href="">Our products</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <button type="submit"></button>
+        </div>
     </header>
 </body>
 </html>
