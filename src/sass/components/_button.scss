@@ -1,13 +1,21 @@
-// використовуйте клас btn ЗАВЖДИ, якщо в вас є кнопка
-// будь-яка!
+// використовуйте клас btn ЗАВЖДИ, якщо в вас є BUTTON
+// будь-який!
 
 // додавайте клас btn--transparent паралельно,
 // якщо вам потрібна прозора кнопка
 
+// або/ще клас btn--small,
+// якщо потрібна маленька прозора кнопка
+
 // додавайте клас btn__icon у ваш svg тег,
-// у якому ви розмістите саму іконку всередені use
+// в якому ви розмістите саму іконку всередені use
 
 // все повинно працювати коректно з обома кнопками: і ховер, і фокус
+
+// використовуйте btn-anchor для якорів,
+// які створюєте за допомогою посилань <a></a>,
+// а не <button>
+// Розмір адаптується під ширину вьюпорту
 
 .btn {
   padding: 12px 34px;
@@ -35,10 +43,31 @@
   &:focus {
     color: $main-text-color;
   }
-
 }
 
 .btn--transparent {
+  background-color: transparent;
+  border: 2px solid $accent-color;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    border-color: $button-color;
+  }
+
+  &:focus {
+    color: $main-text-color;
+    outline: none;
+    border: 2px solid $button-color;
+  }
+}
+
+.btn--small {
+  padding: 7px 12px;
+
+  font-size: 8px;
+  line-height: 1.25;
+
   background-color: transparent;
   border: 2px solid $accent-color;
 
@@ -61,5 +90,37 @@
   .btn:focus &,
   .btn--transparent:focus & {
     fill: currentColor;
+  }
+}
+
+// button-anchor
+
+.btn-anchor {
+  display: inline-block;
+  padding: 7px 12px;
+
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
+  color: $accent-color;
+  text-decoration-line: underline;
+  text-align: center;
+
+  border: none;
+
+  &:hover {
+    color: $button-color;
+  }
+
+  &:focus {
+    outline: none;
+    color: $main-text-color;
+  }
+
+  @include mq(desk) {
+    padding: 12px 22px;
+
+    font-size: 14px;
+    line-height: 1.2;
   }
 }
