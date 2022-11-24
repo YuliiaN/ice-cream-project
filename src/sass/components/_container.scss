@@ -6,7 +6,7 @@
     width: 480px;
     padding: 0 20px;
   }
-  @include mq(tab-only) {
+  @include mq(tab) {
     width: 768px;
     padding: 0 32px;
   }

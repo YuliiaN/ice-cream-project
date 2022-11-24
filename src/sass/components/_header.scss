@@ -40,7 +40,7 @@
     background-color: transparent;
 }
 
-.mobile-icons {
+.mobile-icons, .logo__icons {
     flex-shrink: 0;
 }
 
@@ -60,7 +60,7 @@
     width: 100%;
     height: 100%;
     background-color: $main-background-color;
-    z-index: 1;
+    z-index: 14;
 
 
     &.is-hidden {
@@ -112,6 +112,10 @@
     width: 40px;
     height: 37px;
     z-index: 15;
+    @include mq(tab-only) {
+        width: 48px;
+        height: 44px;
+    }
 }
 
 .header-mobile {
@@ -232,7 +236,7 @@
     width: 100%;
     height: 100%;
     background-color: $main-background-color;
-    z-index: 1;
+    z-index: 14;
 
 
     &.is-hidden {
@@ -255,7 +259,7 @@
 
 .tab-logo {
     display: block;
-    padding: 20px 0px;
+    padding: 20px 0;
 }
 
 .desk {
