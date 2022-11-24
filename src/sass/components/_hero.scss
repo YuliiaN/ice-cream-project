@@ -128,7 +128,7 @@
     @include mq(tab) {
         display: block;
         position: absolute;
-        left: 32px;
+        left: 20px;
         bottom: 6px;
         z-index: 5;
     }
@@ -173,10 +173,44 @@
     top: 28px;
 }
 
-.hero-benefits__list {}
+.hero-benefits {
+    display: none;
+    @include mq(tab) {
+        display: block;
+    }
+}
 
 .hero-benefits__item {}
 
-.hero-benefits__numbers {}
+.hero-benefits__numbers {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: calc(34/28);
+    letter-spacing: 0.04em;
+    color: $second-text-color;
+    text-align: right;
+    @include mq(desk) {
+        font-size: 48px;
+        line-height: calc(56/48);
+    }
 
-.hero-benefits__text {}
+}
+
+.hero-benefits__text {
+    font-size: 8px;
+    line-height: calc(10/8);
+    color:$main-text-color;
+    text-align: right;
+    @include mq(desk) {
+            font-size: 14px;
+            line-height: calc(17/14);
+        }
+}
+
+.hero-text {
+
+}
+
+.hero-text__text {
+    
+}
