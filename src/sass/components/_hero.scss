@@ -180,7 +180,16 @@
     }
 }
 
-.hero-benefits__item {}
+.hero-benefits__item {
+    &:not(:last-child) {
+    margin-bottom: 20px;
+    }
+    @include mq(desk) {
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+    }
+}
 
 .hero-benefits__numbers {
     font-weight: 900;
@@ -189,6 +198,7 @@
     letter-spacing: 0.04em;
     color: $second-text-color;
     text-align: right;
+    margin-bottom: 4px;
     @include mq(desk) {
         font-size: 48px;
         line-height: calc(56/48);
@@ -207,18 +217,40 @@
 }
 
 .hero-text {
-    position: absolute;
-    
-    left: 184px;
-    bottom: 52px;
+    display: none;
+    @include mq(tab) {
+        display: block;
+        position: absolute;
+        left: 210px;
+        bottom: 22px;
+        }
+    @include mq(desk) {
+        left: 257px;
+        bottom: 103px;
+        }
 }
+    
 
 .hero-text__text {
     font-size: 12px;
     line-height: calc(17/12);
     width: 151px;
+    margin-bottom: 12px;
+    @include mq(desk) {
+        font-size: 14px;
+        line-height: calc(19/14);
+        margin-bottom: 24px;
+        width: 200px;
+        }
+}
+
+.hero-text__link {
+    &:hover, &:focus {
+        color: $second-text-color;
+    }
 }
 
 .hero-text__icon {
-
+    fill: currentColor;
 }
+
