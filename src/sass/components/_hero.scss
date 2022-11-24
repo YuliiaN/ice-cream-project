@@ -199,7 +199,6 @@
 .hero-benefits__text {
     font-size: 8px;
     line-height: calc(10/8);
-    color:$main-text-color;
     text-align: right;
     @include mq(desk) {
             font-size: 14px;
@@ -208,9 +207,18 @@
 }
 
 .hero-text {
-
+    position: absolute;
+    
+    left: 184px;
+    bottom: 52px;
 }
 
 .hero-text__text {
-    
+    font-size: 12px;
+    line-height: calc(17/12);
+    width: 151px;
+}
+
+.hero-text__icon {
+
 }
