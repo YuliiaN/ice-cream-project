@@ -1,3 +1,9 @@
+.smth {
+  padding-top: 190px;
+  padding-bottom: 395px;
+  background-color: palevioletred;
+}
+
 .footer {
   position: relative;
   top: -360px;
@@ -25,15 +31,7 @@
 
 // footer address cards
 
-.footer__address {
-  display: flex;
-  justify-content: center;
-}
-
 .footer__address-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20;
   margin-bottom: 32px;
 
   font-style: normal;
@@ -54,13 +52,18 @@
 }
 
 .footer__address-item {
-  display: flex;
-  flex-direction: column;
+  width: 280px;
   padding: 40px 32px;
+  margin-left: auto;
+  margin-right: auto;
 
   background-color: $white-color;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 
   @include mq(tab) {
     width: calc((100% - 16px * 2) / 3);
@@ -73,7 +76,7 @@
 }
 
 .footer__address-title {
-  width: fit-content;
+  display: inline-block;
   padding: 0 24px;
   margin-bottom: 20px;
 
@@ -99,10 +102,6 @@
 .footer__address-path,
 .footer__address-schedule {
   position: relative;
-
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
   margin-bottom: 48px;
 
   &::after {
@@ -118,16 +117,20 @@
       bottom: -32px;
     }
   }
+}
+
+.footer__address-path-item:not(:last-child),
+.footer__address-schedule-item:not(:last-child) {
+  margin-bottom: 8px;
 
   @include mq(tab) {
-    gap: 12px;
-    margin-bottom: 64px;
+    margin-bottom: 12px;
   }
 }
 
-.footer__address-path {
+.footer__address-path-item:not(:last-child) {
   @include mq(desk) {
-    gap: 8px;
+    margin-bottom: 8px;
   }
 }
 
@@ -151,6 +154,7 @@
 }
 
 .footer__address-contacts {
+  display: block;
   line-height: 1.5;
   color: $second-text-color;
 
@@ -161,26 +165,25 @@
 
 // footer buttons
 
-.footer__btn-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+// .footer__btn-wrap {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 16px;
 
-  width: 196px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 39px;
+//   width: 196px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin-bottom: 39px;
 
-  @include mq(tab) {
-    flex-direction: row;
+//   @include mq(tab) {
+//     flex-direction: row;
 
-    width: 408px;
-    margin-bottom: 40px;
-  }
-}
+//     width: 408px;
+//     margin-bottom: 40px;
+//   }
+// }
 
 .footer__btn {
-  width: 100%;
 }
 
 // footer text
