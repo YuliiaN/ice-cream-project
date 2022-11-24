@@ -39,8 +39,8 @@
   color: $second-text-color;
 
   @include mq(tab) {
-    // flex-direction: row;
-    // justify-content: center;
+    display: flex;
+    justify-content: space-between;
     gap: 16px;
     margin-bottom: 60px;
   }
@@ -63,6 +63,10 @@
 
   &:not(:last-child) {
     margin-bottom: 20px;
+
+    @include mq(tab) {
+      margin-bottom: 0;
+    }
   }
 
   @include mq(tab) {
@@ -71,6 +75,7 @@
   }
 
   @include mq(desk) {
+    width: calc((100% - 32px * 2) / 3);
     padding: 40px 40px;
   }
 }
@@ -165,10 +170,28 @@
 
 // footer buttons
 
+.footer__btn-wrap {
+  margin-bottom: 39px;
+
+  @include mq(tab) {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+}
+
+.footer__btn {
+  @include mq(mob-only) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .footer__btn:not(:last-child) {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 16px;
+  @include mq(mob-only) {
+    margin-bottom: 16px;
+  }
 }
 
 // footer text
@@ -214,8 +237,8 @@
   margin-bottom: 56px;
 
   @include mq(tab) {
-    // flex-direction: row;
-    // justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 46px;
   }
 
@@ -249,25 +272,31 @@
 
 .footer__text-wrap {
   max-width: 232px;
-  margin-top: 39px;
   margin-bottom: 42px;
 
   line-height: 1.2;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+
+  @include mq(tab) {
+    max-width: 350px;
+    margin-bottom: 0;
+  }
 }
 
 .footer__link-wrap {
   @include mq(tab) {
     position: relative;
     bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     gap: 32px;
   }
 
   @include mq(desk) {
     bottom: 0;
-    gap: 40px;
   }
 }
 
@@ -280,6 +309,7 @@
   margin-bottom: 38px;
 
   @include mq(tab) {
+    margin-bottom: 0;
     gap: 30px;
   }
 }
