@@ -1,21 +1,18 @@
 .hero {
-    width: 100%;
-    
-    background-repeat: no-repeat;
-    background-image: url('../images/mobile-hero-dots.png');
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: url('../images/mobile-hero-dots-2x.png');
-    }
-    bottom: 100%;
 
 }
 
 .hero-content {
     position: relative;
     height: 502px;
+    padding-top: 38px;
+    padding-bottom: 236px;
+    @include mq(desk) {
+        padding-top: 14px;
+        padding-bottom: 332px;
+        height: 560px;
+    }
 }
 
 .hero__title {
@@ -25,13 +22,30 @@
     letter-spacing: 0.04em;
     color: $main-text-color;
     max-width: 247px;
-    margin-top: 99px;
+    
     margin-bottom: 32px;
-    margin-left: 20px;
+    
+
+    @include mq(desk) {
+        font-size: 38px;
+        line-height: calc(48/38);
+        letter-spacing: 0.04em;
+        
+        max-width: 367px;
+    }
 }
 
 .hero__uppercase {
-    text-transform: uppercase;
+    
+    font-size: 34px;
+    line-height: calc(33/34);
+    @include mq(desk) {
+            font-size: 38px;
+            line-height: calc(48/38);
+            letter-spacing: 0.04em;
+            
+        }
+
 }
 
 .hero__list {
@@ -40,11 +54,31 @@
     gap: 12px;
 }
 
+
 .hero__icecreams {
     position: absolute;
     bottom: 0;
-    right: 64px;
-
+    right: 50%;
+    z-index: 4;
+    transform: translateX(50%);
 }
 
-.hero__icecream {}
+.hero-plates {
+    
+
+    
+    
+}
+
+.hero-plates {
+    display: none;
+    @include mq(tab) {
+        position: absolute;
+        left: 0;
+        bottom: 12px;
+        z-index: 5;
+    }
+        @include mq(desk) {
+            bottom: 40px;
+        }
+}
