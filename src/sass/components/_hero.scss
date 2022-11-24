@@ -40,7 +40,7 @@
 
 .hero-content {
     position: relative;
-    height: 502px;
+    height: 450px;
     padding-top: 38px;
     padding-bottom: 236px;
     @include mq(tab) {
@@ -165,3 +165,18 @@
             width: 477px;
         }
 }
+
+.hero-benefits {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 28px;
+}
+
+.hero-benefits__list {}
+
+.hero-benefits__item {}
+
+.hero-benefits__numbers {}
+
+.hero-benefits__text {}
