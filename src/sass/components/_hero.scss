@@ -1,5 +1,21 @@
-.hero {}
+.hero {
+    width: 100%;
+    
+    background-repeat: no-repeat;
+    background-image: url('../images/mobile-hero-dots.png');
 
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url('../images/mobile-hero-dots-2x.png');
+    }
+    bottom: 100%;
+
+}
+
+.hero-content {
+    height: 502px;
+}
 
 .hero__title {
     font-family: $font-family-title;

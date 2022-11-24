@@ -43,6 +43,7 @@
   &:focus {
     color: $main-text-color;
   }
+
 }
 
 .btn--transparent {
@@ -60,6 +61,11 @@
     outline: none;
     border: 2px solid $button-color;
   }
+
+  @include transitionM(background-color);
+  @include transitionM(color);
+  @include transitionM(border);
+  
 }
 
 .btn--small {
@@ -91,6 +97,7 @@
   .btn--transparent:focus & {
     fill: currentColor;
   }
+
 }
 
 // button-anchor
@@ -123,4 +130,8 @@
     font-size: 14px;
     line-height: 1.2;
   }
+  @include transitionM(color);
 }
+
+
+
