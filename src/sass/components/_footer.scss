@@ -7,6 +7,20 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.86;
+
+  @include mq(tab) {
+    top: -300px;
+    padding-bottom: 13px;
+
+    font-size: 14px;
+  }
+
+  @include mq(desk) {
+    top: -96px;
+    padding-bottom: 11px;
+
+    font-size: 16px;
+  }
 }
 
 // footer address cards
@@ -25,18 +39,37 @@
   font-style: normal;
   letter-spacing: 0.04em;
   color: $second-text-color;
+
+  @include mq(tab) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 60px;
+  }
+
+  @include mq(desk) {
+    gap: 32px;
+    margin-bottom: 64px;
+  }
 }
 
 .footer__address-item {
   display: flex;
   flex-direction: column;
-
-  width: 280px;
   padding: 40px 32px;
 
   background-color: $white-color;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+
+  @include mq(tab) {
+    width: calc((100% - 16px * 2) / 3);
+    padding: 40px 24px;
+  }
+
+  @include mq(desk) {
+    padding: 40px 40px;
+  }
 }
 
 .footer__address-title {
@@ -53,11 +86,20 @@
 
   background-color: $accent-color;
   border-radius: 4px;
+
+  @include mq(tab) {
+    padding: 0 11px;
+    margin-bottom: 32px;
+
+    font-size: 16px;
+    line-height: 1.87;
+  }
 }
 
 .footer__address-path,
 .footer__address-schedule {
   position: relative;
+
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -67,10 +109,25 @@
     content: '';
     position: absolute;
     left: 0;
-    bottom: -25%;
+    bottom: -24px;
     width: 100%;
     height: 1px;
     background-color: #e1e1e1;
+
+    @include mq(tab) {
+      bottom: -32px;
+    }
+  }
+
+  @include mq(tab) {
+    gap: 12px;
+    margin-bottom: 64px;
+  }
+}
+
+.footer__address-path {
+  @include mq(desk) {
+    gap: 8px;
   }
 }
 
@@ -78,16 +135,28 @@
   line-height: 1.83;
   letter-spacing: 0.04em;
   color: $address-color;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .footer__address-schedule-time {
   text-transform: uppercase;
   color: #ababab;
+
+  @include mq(tab-only) {
+    color: #907e82;
+  }
 }
 
 .footer__address-contacts {
   line-height: 1.5;
   color: $second-text-color;
+
+  @include mq(tab) {
+    line-height: 1.83;
+  }
 }
 
 // footer buttons
@@ -101,6 +170,13 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 39px;
+
+  @include mq(tab) {
+    flex-direction: row;
+
+    width: 408px;
+    margin-bottom: 40px;
+  }
 }
 
 .footer__btn {
@@ -114,34 +190,126 @@
   flex-direction: column;
   gap: 16px;
   max-width: 234px;
-  margin-bottom: 42px;
+
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  @include mq(tab) {
+    gap: 9;
+  }
+
+  @include mq(desk) {
+    gap: 14px;
+    max-width: 504px;
+  }
 }
 
 .footer__text-first {
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.22;
-  text-transform: uppercase;
+
+  @include mq(tab) {
+    font-size: 26px;
+  }
+
+  @include mq(desk) {
+    font-weight: 400;
+    font-size: 30px;
+  }
 }
 
 .footer__text-second {
   font-weight: 700;
   font-size: 34px;
-  line-height: 1.2;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+
+  @include mq(tab) {
+    font-size: 48px;
+    letter-spacing: 0.06em;
+  }
+
+  @include mq(desk) {
+    font-size: 58px;
+  }
+}
+
+// wrappers
+
+.footer__common-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  margin-bottom: 56px;
+
+  @include mq(tab) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 46px;
+  }
+
+  @include mq(desk) {
+    align-items: center;
+    margin-bottom: 66px;
+  }
+}
+
+// ::after grey line
+
+.footer__common-wrap::after {
+  content: '';
+  position: absolute;
+  left: -15px;
+  bottom: -40px;
+  width: calc(100% + 30px);
+  height: 1px;
+  background-color: #e1e1e1;
+
+  @include mq(tab) {
+    bottom: -32px;
+  }
+
+  @include mq(desk) {
+    left: 0;
+    bottom: -54px;
+    width: 100%;
+  }
+}
+
+.footer__link-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 38px;
+
+  @include mq(tab) {
+    position: relative;
+    bottom: 20px;
+    justify-content: flex-end;
+    gap: 32px;
+  }
+
+  @include mq(desk) {
+    bottom: 0;
+    gap: 40px;
+  }
 }
 
 // social media
 
 .footer__sm-list {
   display: flex;
-  justify-content: flex-end;
   gap: 27px;
-  margin-bottom: 38px;
+
+  @include mq(tab) {
+    gap: 30px;
+  }
 }
 
 .footer__sm-link {
+  display: flex;
+  align-items: center;
+
   color: #84a178;
   fill: currentColor;
 
@@ -154,24 +322,25 @@
   }
 }
 
+.footer__sm-icon {
+  width: 32px;
+  height: 32px;
+
+  @include mq(tab) {
+    width: 34px;
+    height: 34px;
+  }
+}
+
 // tel number
 
 .footer__tel-text {
-  position: relative;
-  margin-bottom: 56px;
-
   font-weight: 700;
   color: $second-text-color;
   text-align: right;
 
-  &::after {
-    content: '';
-    position: absolute;
-    left: -15px;
-    bottom: -40px;
-    width: calc(100% + 30px);
-    height: 1px;
-    background-color: #e1e1e1;
+  @include mq(desk) {
+    letter-spacing: 0.02em;
   }
 }
 
@@ -188,4 +357,17 @@
   line-height: 1.52;
   color: #7a7a7a;
   text-align: center;
+
+  @include mq(mob-only) {
+    max-width: 150px;
+  }
+
+  @include mq(tab) {
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+  }
+
+  @include mq(desk) {
+    font-size: 16px;
+  }
 }
