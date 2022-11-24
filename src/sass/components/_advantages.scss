@@ -1,44 +1,117 @@
-/*.advantages {
-    background-color: $main-background-color;
+.advantages {
+    padding: 60px 45px;
+    height: 1100px;
+
+    @media screen and (min-width: 768px) {
+        padding: 40px 76px;
+        height: 900;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 60px 16px 180px 16px;
+        height: 700;
+    }
 }
-*/
-/*
+
+
 .advantages__list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}*/
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 80px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        gap: 32px;
+    }
+}
 
 .advantages__title {
     font-weight: 700;
-    font-size: 58px;
-    line-height: 1.22;
-    text-align: start;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $main-text-color;
+    margin-bottom: 18px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        line-height: 1.23;
+        margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 58px;
+        line-height: 1.22;
+        
+    }
 }
 
 .cow::before {
     content: url('../images/cow.png');
-    /*background-image: url(../images/cow.png);*/
+    display: block;
+    margin-bottom: 17px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 40px;
+    }
 }
 
 .weight::before {
     content: url('../images/weight.png');
-    /*background-image: url(../images/cow.png);*/
+    display: block;
+    margin-bottom: 17px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 40px;
+    }
 }
 
 .ice-crema::before {
     content: url('../images/ice-crema.png');
-    /*background-image: url(../images/cow.png);*/
+    display: block;
+    margin-bottom: 17px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 40px;
+    }
 }
 
 .advantages__descr {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.76;
-    text-align: start;
-    letter-spacing: 0.02em;
-    color: #FCFCFC;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+    text-align: center;
+    color: $main-text-color;
+    margin-bottom: 28px;
+
+    @media screen and (min-width: 768px) {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.74;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        line-height: 1.76;
+        text-align: center;
+        letter-spacing: 0.02em;
+    }
 }
+
+
