@@ -36,6 +36,9 @@
     color: $main-text-color;
   }
 
+@include transitionM(background-color);
+@include transitionM(color);
+
 }
 
 .btn--transparent {
@@ -53,6 +56,11 @@
     outline: none;
     border: 2px solid $button-color;
   }
+
+  @include transitionM(background-color);
+  @include transitionM(color);
+  @include transitionM(border);
+  
 }
 
 .btn__icon {
@@ -62,4 +70,5 @@
   .btn--transparent:focus & {
     fill: currentColor;
   }
+  @include transitionM(color);
 }
