@@ -1,8 +1,8 @@
 .hero {
     
     background-repeat: no-repeat;
-    background-image: url('../images/mobile-blur.png'), url('../images/mobile-hero-dots.png'),
-        url('../images/mobile-hero.png');
+    background-image: url('../images/mobile-hero-dots.png'),
+        url('../images/mobile-hero.png'), url('../images/mobile-blur.png');
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -11,7 +11,7 @@
             url('../images/mobile-hero-dots-2x.png'),
             url('../images/mobile-hero-2x.png');
     }
-
+    background-position: 50% 100%, 50% 100%, 60% 130%;
 
 }
 
