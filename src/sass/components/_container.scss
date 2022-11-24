@@ -3,10 +3,10 @@
   padding: 0 15px;
   border: 1px solid black;
 
-  @include mq(mob-only) {
+  @include mq(mob) {
     width: 480px;
   }
-  @include mq(tab-only) {
+  @include mq(tab) {
     width: 768px;
   }
   @include mq(desk) {
