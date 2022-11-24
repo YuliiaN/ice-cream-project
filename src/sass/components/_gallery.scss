@@ -1,11 +1,8 @@
 .gallary {
-    // margin-left: auto;
-    // margin-right: auto;
     background-image: url('../images/iceсream-gall-mob-1x.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    // flex-grow: 1;
 }
 
     @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -39,7 +36,6 @@
     background-color: $main-background-color;
     width: 15px;
     height: 15px;
-    
 }
 
 .container__gallery {
@@ -47,21 +43,30 @@
     height: auto;
 }
 
-
 .icecream__photo {
-    position: relative;
-    transform: translate(0, -50%);
-    border-radius: 8px;
-    margin: 0 auto;
-    
+  width: 100%;
+  max-width: 1013px;
 }
 
-.swiper {
-    // width: 100%;
-    // height: auto;
+ .ice {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 8px;
+
+  @media screen and (min-width: 768px) {
+    border-radius: 18px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    border-radius: 24px;
+  }
+}
+
+.reviews {
+    width: 100%;
+    height: auto;
     margin-bottom: 20px ;
     margin-top: 80px;
-    outline: 1px solid red;
   }
 
     .swiper-slide {
@@ -105,16 +110,13 @@
     line-height: 1.86em;
 }
 
-
-
-
 @media screen and (min-width: 768px){
     .icecream__photo {
             width: 704px;
             height: 327px;
         }
 
-        .swiper {
+        .reviews {
             width: 705px;
             height: 361px;
             gap: 32px;
@@ -143,7 +145,7 @@
             height: 422px;
         }
 
-        .swiper {
+        .reviews {
             width: 968px;
             height: 361px;
             gap: 32px;
