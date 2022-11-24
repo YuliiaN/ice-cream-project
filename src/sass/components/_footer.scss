@@ -165,58 +165,29 @@
 
 // footer buttons
 
-// .footer__btn-wrap {
-//   display: flex;
-//   flex-direction: column;
-//   gap: 16px;
-
-//   width: 196px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   margin-bottom: 39px;
-
-//   @include mq(tab) {
-//     flex-direction: row;
-
-//     width: 408px;
-//     margin-bottom: 40px;
-//   }
-// }
-
-.footer__btn {
+.footer__btn:not(:last-child) {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
 }
 
 // footer text
 
-.footer__text-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  max-width: 234px;
-
-  line-height: 1.2;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-
-  @include mq(tab) {
-    gap: 9;
-  }
-
-  @include mq(desk) {
-    gap: 14px;
-    max-width: 504px;
-  }
-}
-
 .footer__text-first {
+  margin-bottom: 16px;
+
   font-weight: 700;
   font-size: 18px;
 
   @include mq(tab) {
+    margin-bottom: 9px;
+
     font-size: 26px;
   }
 
   @include mq(desk) {
+    margin-bottom: 14px;
+
     font-weight: 400;
     font-size: 30px;
   }
@@ -240,9 +211,6 @@
 
 .footer__common-wrap {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 42px;
   margin-bottom: 56px;
 
   @include mq(tab) {
@@ -279,12 +247,17 @@
   }
 }
 
-.footer__link-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 38px;
+.footer__text-wrap {
+  max-width: 232px;
+  margin-top: 39px;
+  margin-bottom: 42px;
 
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.footer__link-wrap {
   @include mq(tab) {
     position: relative;
     bottom: 20px;
@@ -303,6 +276,7 @@
 .footer__sm-list {
   display: flex;
   gap: 27px;
+  margin-bottom: 38px;
 
   @include mq(tab) {
     gap: 30px;
