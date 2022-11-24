@@ -39,8 +39,8 @@
   color: $second-text-color;
 
   @include mq(tab) {
-    flex-direction: row;
-    justify-content: center;
+    // flex-direction: row;
+    // justify-content: center;
     gap: 16px;
     margin-bottom: 60px;
   }
@@ -214,8 +214,8 @@
   margin-bottom: 56px;
 
   @include mq(tab) {
-    flex-direction: row;
-    justify-content: space-between;
+    // flex-direction: row;
+    // justify-content: space-between;
     margin-bottom: 46px;
   }
 
@@ -275,6 +275,7 @@
 
 .footer__sm-list {
   display: flex;
+  justify-content: flex-end;
   gap: 27px;
   margin-bottom: 38px;
 
