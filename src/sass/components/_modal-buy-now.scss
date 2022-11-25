@@ -38,7 +38,7 @@
 
     width: 280px;
     @include mq (tab) {
-        min-width: 586px;
+        min-width: 600px;
     }
 
 
@@ -78,8 +78,9 @@
     height: 90vw;
     overflow: auto;
     @include mq(tab) {
-        
+        width: 500px;
         height: auto;
+        margin: 0 auto;
     }
 }
 
@@ -154,7 +155,7 @@
 }
 
 .order__form {
-    width: 368px;
+    max-width: 368px;
     margin: 0 auto;
 }
 
@@ -167,6 +168,8 @@
         width: 100%;
         margin-bottom: 40px;
         margin-top: 103px;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -176,12 +179,6 @@
     transform: translateY(50%);
     width: 180px;
     left: -18%;
-}
-
-.img-modal__products-third {
-    @include mq(tab) {
-        top: -90%;
-    }
 }
 
 .product-one, .product-second, .product-third {
@@ -221,8 +218,14 @@
 .products-modal-one,
 .products-modal-second {
     margin-bottom: 83px;
+    @include mq(tab) {
+        margin-bottom: 0;
+        }
 }
 
 .products-modal-third {
     margin-bottom: 28px;
+    @include mq(tab) {
+            margin-bottom: 0;
+        }
 }
