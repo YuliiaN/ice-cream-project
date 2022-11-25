@@ -1,3 +1,11 @@
+// backdrop
+
+.backdrop.is-hidden-franchise {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 // modal styles
 
 .modal-franchise {
@@ -34,11 +42,11 @@
 
 .modal-franchise__close-btn {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 12px;
+  right: 12px;
 
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   padding: 0;
 
   display: flex;
@@ -49,17 +57,20 @@
   border: none;
 
   @include mq(tab) {
-    top: 20px;
-    right: 20px;
-
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
   }
 }
 
 .modal-franchise__close-icon {
   width: 16px;
   height: 16px;
+
+  @include transitionM(fill);
+
+  .modal-franchise__close-btn:hover & {
+    fill: $main-background-color;
+  }
 
   @include mq(tab) {
     width: 20px;
@@ -100,10 +111,16 @@
 
 // form
 
-.modal-franchise__form {
+.modal-franchise__form-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
   margin-bottom: 24px;
 
   @include mq(tab) {
+    gap: 16px;
+
     margin-bottom: 32px;
   }
 }
@@ -113,12 +130,14 @@
   padding: 8px 12px;
 
   background-color: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84a178;
+  border: 1px solid $main-background-color;
   border-radius: 10px;
 
   font-size: 12px;
   line-height: 1.4;
   color: $second-text-color;
+
+  @include transitionM(border-color);
 
   &::placeholder {
     font-size: 12px;
@@ -143,21 +162,13 @@
   }
 }
 
-.modal-franchise__form-field:not(:last-child) {
-  margin-bottom: 12px;
-
-  @include mq(tab) {
-    margin-bottom: 16px;
-  }
-}
-
 .modal-franchise__comment {
   width: 224px;
   height: 60px;
   padding: 8px 12px;
 
   background-color: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84a178;
+  border: 1px solid $main-background-color;
   border-radius: 10px;
 
   resize: none;
@@ -165,6 +176,8 @@
   font-size: 12px;
   line-height: 1.4;
   color: $second-text-color;
+
+  @include transitionM(border-color);
 
   &::placeholder {
     font-size: 12px;
@@ -191,21 +204,8 @@
 }
 
 .modal-franchise__btn {
-  padding: 12px 34px;
-  background-color: $accent-color;
-  border: none;
-  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
 
-  font-weight: 600;
-  font-size: 12px;
   line-height: 1.25;
-  text-align: center;
-}
-
-// backdrop
-
-.backdrop.is-hidden-franchise {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
 }
