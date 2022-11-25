@@ -107,7 +107,7 @@
   @include transitionM(opacity);
 }
 
-.backdrop.is-hidden {
+.backdrop.is-hidden-location {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
