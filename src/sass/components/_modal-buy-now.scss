@@ -7,7 +7,7 @@
     height: 100%;
     left: 0;
     top: 0;
-    background-color: $address-color;
+    background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
     @include transitionM(opacity);
     @include transitionM(visibility);
