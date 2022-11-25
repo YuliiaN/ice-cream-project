@@ -1,5 +1,5 @@
 <section class="about">
-  <div class="container">
+  <div class="container about-container">
     <p class="about-subtitle">tradition and love</p>
     <h2 class="about-title">how it’s made?</h2>
     <div class="about-block">
@@ -12,7 +12,7 @@
           width="279"
         />
         <img
-          class="about-img1"
+          class="about-img--yellow"
           srcset="./images/yellow1x.png 1x, ./images/yellow2x.png 2x"
           src="./images/yellow1x.png"
           alt="yellow circle"
@@ -35,8 +35,11 @@
           This is enough to choose ice cream and coffee for any mood!
         </p>
 
-        <button class="about-btn" type="button" data-modal-open>
+        <button class="btn about-button" type="button">
           Read more
+          <svg class="btn__icon" width="12px" height="12px">
+            <use href="./images/icons.svg#icon-arrow-right"></use>
+          </svg>
         </button>
       </div>
     </div>
