@@ -38,7 +38,7 @@
 
 .about-img--yellow {
   position: absolute;
-  width: 315px;
+  min-width: 315px;
   bottom: 0px;
   right: -15px;
 
@@ -124,7 +124,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  
+
   margin: 0 auto;
   text-align: center;
 
