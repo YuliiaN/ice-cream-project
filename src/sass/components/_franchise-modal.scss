@@ -1,0 +1,211 @@
+// modal styles
+
+.modal-franchise {
+  min-width: 280px;
+  height: 100%;
+  overflow: auto;
+  padding: 28px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: $white-color;
+  border: 2px solid $accent-color;
+  border-radius: 10px;
+
+  text-align: center;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $card-one-color;
+    border-radius: 10px;
+  }
+
+  @include mq(tab) {
+    width: 568px;
+    padding: 32px 60px;
+  }
+}
+
+.modal-franchise__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 16px;
+  height: 16px;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+  border: none;
+
+  @include mq(tab) {
+    top: 20px;
+    right: 20px;
+
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.modal-franchise__close-icon {
+  width: 16px;
+  height: 16px;
+
+  @include mq(tab) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+// content
+
+.modal-franchise__title {
+  margin-bottom: 20px;
+
+  font-family: $font-family-title;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $second-text-color;
+
+  @include mq(tab) {
+    margin-bottom: 24px;
+
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+.modal-franchise-text {
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: $second-text-color;
+  text-align: start;
+
+  @include mq(tab) {
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
+}
+
+// form
+
+.modal-franchise__form {
+  margin-bottom: 24px;
+
+  @include mq(tab) {
+    margin-bottom: 32px;
+  }
+}
+
+.modal-franchise__input {
+  width: 224px;
+  padding: 8px 12px;
+
+  background-color: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+
+  font-size: 12px;
+  line-height: 1.4;
+  color: $second-text-color;
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.4;
+    color: $second-text-color;
+
+    @include mq(tab) {
+      font-size: 14px;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $accent-color;
+  }
+
+  @include mq(tab) {
+    width: 368px;
+    padding: 11px 16px;
+
+    font-size: 14px;
+  }
+}
+
+.modal-franchise__form-field:not(:last-child) {
+  margin-bottom: 12px;
+
+  @include mq(tab) {
+    margin-bottom: 16px;
+  }
+}
+
+.modal-franchise__comment {
+  width: 224px;
+  height: 60px;
+  padding: 8px 12px;
+
+  background-color: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+
+  resize: none;
+
+  font-size: 12px;
+  line-height: 1.4;
+  color: $second-text-color;
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.4;
+    color: $second-text-color;
+
+    @include mq(tab) {
+      font-size: 14px;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $accent-color;
+  }
+
+  @include mq(tab) {
+    width: 368px;
+    height: 84px;
+    padding: 11px 16px;
+
+    font-size: 14px;
+  }
+}
+
+.modal-franchise__btn {
+  padding: 12px 34px;
+  background-color: $accent-color;
+  border: none;
+  border-radius: 10px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+// backdrop
+
+.backdrop.is-hidden-franchise {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
