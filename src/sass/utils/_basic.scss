@@ -11,6 +11,10 @@
   margin: -1px;
 }
 
+* {
+  cursor: url('../images/cursor.png'), pointer;
+}
+
 body {
   font-family: $font-family;
   font-size: 16px;
