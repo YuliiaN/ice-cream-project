@@ -38,7 +38,7 @@
 
     width: 280px;
     @include mq (tab) {
-        width: 586px;
+        min-width: 586px;
     }
 
 
@@ -176,6 +176,12 @@
     transform: translateY(50%);
     width: 180px;
     left: -18%;
+}
+
+.img-modal__products-third {
+    @include mq(tab) {
+        top: -90%;
+    }
 }
 
 .product-one, .product-second, .product-third {
