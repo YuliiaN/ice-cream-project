@@ -1,11 +1,14 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.reviews', {
   // Optional parameters
-  direction: 'vertical',
+  direction: 'horizontal',
   loop: true,
+  speed: 2000,
+  
 
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
 
   // Navigation arrows
