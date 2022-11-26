@@ -75,6 +75,7 @@
 }
 
 .about-product {
+    position: relative;
 
     margin: 0 auto;
     // height: 95%;
@@ -88,13 +89,16 @@
 }
 
 .about-product__title {
-    margin-bottom: 83px;
+    margin-bottom: 180px;
     font-size: 20px;
     line-height: calc(28/20);
     font-family: $font-family-title;
     text-align: center;
     color: $second-text-color;
 
+    @include mq(tab) {
+        margin-bottom: 200px;
+    }
 }
 
 .order__input {
@@ -193,23 +197,17 @@
 }
 
 
-
-.about-product__img {
-    position: relative;
-}
-
 .chocolate-icecream {
     position: absolute;
-    top: -120%;
-    transform: translateY(50%);
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 180px;
-    left: -18%;
+    @include mq(tab) {
+        top: 45px;
+    }
+    
 }
-
-
-
-
-
 
 
 .kcal {
@@ -226,9 +224,10 @@
 }
 
 .kcal-text {
-    margin-top: 52px;
+    margin-top: 48px;
     font-size: 10px;
     line-height: calc(12/10);
+    color: $second-text-color;
     @include mq(tab) {
             font-size: 12px;
             line-height: calc(15/12);
@@ -259,7 +258,7 @@
 }
 
 .grams-text {
-    padding: 8px 0;
+    padding: 5px 0;
     margin: 0;
     font-weight: 500;
     font-size: 10px;
@@ -268,13 +267,14 @@
     @include mq(tab) {
             font-size: 12px;
             line-height: calc(28/12);
-            margin-top: 61px;
-            padding: 12px 0;
+            padding: 10px 0;
         }
 }
 
 .calories {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 9px;
     @include mq(tab) {
         gap: 20px;
@@ -284,6 +284,9 @@
 .ingredients__item {
     display: flex;
     justify-content: space-between;
+    &:not(:last-child) {
+        margin-bottom: 11px;
+    }
 }
 
 .ingredients__text {
@@ -296,4 +299,18 @@
     font-weight: 500;
     font-size: 20px;
     line-height: calc(28/20);
+    color: $second-text-color;
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 24px;
+    @include mq(tab) {
+        margin-top: 48px;
+    }
+}
+
+.ingredients__list {
+    margin-bottom: 40px;
+    @include mq(tab) {
+            margin-bottom: 48px;
+        }
 }
