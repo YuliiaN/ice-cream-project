@@ -351,9 +351,12 @@
 
 .product__link {
   color: $second-text-color;
+  border: none;
+  background-color: transparent;
 
 }
 
 .product__icon {
   fill: currentColor;
 }
+
