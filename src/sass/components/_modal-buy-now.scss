@@ -37,6 +37,7 @@
     @include transitionM(transform);
     border: 2px solid $accent-color;
     width: 280px;
+    height: 95%;
     @include mq (tab) {
         min-width: 600px;
     }
@@ -75,11 +76,11 @@
 .order {
     
     margin: 0 auto;
-    height: 95%;
+    // height: 95%;
     overflow: auto;
     @include mq(tab) {
         width: 500px;
-        height: auto;
+        // height: auto;
         margin: 0 auto;
     }
 }
