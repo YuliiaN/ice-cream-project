@@ -1,22 +1,44 @@
 .footer {
-  padding-top: 39px;
-  padding-bottom: 62px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+
+  position: relative;
 
   @include mq(tab) {
     padding-top: 40px;
-    padding-bottom: 13px;
+    padding-bottom: 12px;
   }
 
   @include mq(desk) {
     padding-top: 120px;
-    padding-bottom: 11px;
+  }
+}
+
+// ::after grey line
+
+.footer::after {
+  content: '';
+  position: absolute;
+  left: -15px;
+  bottom: 82px;
+  width: calc(100% + 30px);
+  height: 1px;
+  background-color: #e1e1e1;
+
+  @include mq(tab) {
+    bottom: 50px;
+  }
+
+  @include mq(desk) {
+    left: 0;
+    bottom: 44px;
+    width: 100%;
   }
 }
 
 // wrappers
 
 .footer__common-wrap {
-  position: relative;
   margin-bottom: 56px;
 
   @include mq(tab) {
@@ -31,38 +53,16 @@
   }
 }
 
-// ::after grey line
-
-.footer__common-wrap::after {
-  content: '';
-  position: absolute;
-  left: -15px;
-  bottom: -40px;
-  width: calc(100% + 30px);
-  height: 1px;
-  background-color: #e1e1e1;
-
-  @include mq(tab) {
-    bottom: -32px;
-  }
-
-  @include mq(desk) {
-    left: 0;
-    bottom: -54px;
-    width: 100%;
-  }
-}
-
 .footer__text-wrap {
-  max-width: 232px;
-  margin-bottom: 42px;
+  max-width: 234px;
+  margin-bottom: 60px;
 
   line-height: 1.2;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
   @include mq(tab) {
-    max-width: 350px;
+    max-width: 352px;
     margin-bottom: 0;
   }
 
@@ -167,11 +167,18 @@
 // tel number
 
 .footer__tel-text {
+  font-size: 12px;
   font-weight: 700;
+  line-height: 1.86;
   color: $second-text-color;
   text-align: right;
 
+  @include mq(tab) {
+    font-size: 14px;
+  }
+
   @include mq(desk) {
+    font-size: 16px;
     letter-spacing: 0.02em;
   }
 }
@@ -200,6 +207,6 @@
   }
 
   @include mq(desk) {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
