@@ -75,10 +75,15 @@
 }
 
 .order {
-    
+
     margin: 0 auto;
     height: 95%;
     overflow: auto;
+    @media screen and (max-width:479px) {
+        width: 90%;
+    }
+        
+    }
     @include mq(tab) {
         width: 500px;
         height: auto;
