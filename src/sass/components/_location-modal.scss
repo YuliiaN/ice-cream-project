@@ -1,3 +1,26 @@
+// backdrop
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  @include transitionM(opacity);
+}
+
+.backdrop.is-hidden-location {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+// modal styles
+
 .modal-location {
   min-width: 280px;
   padding: 28px;
@@ -20,11 +43,11 @@
 
 .modal-location__close-btn {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 12px;
+  right: 12px;
 
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   padding: 0;
 
   display: flex;
@@ -35,11 +58,8 @@
   border: none;
 
   @include mq(tab) {
-    top: 20px;
-    right: 20px;
-
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
   }
 }
 
@@ -47,11 +67,19 @@
   width: 16px;
   height: 16px;
 
+  @include transitionM(fill);
+
+  .modal-location__close-btn:hover & {
+    fill: $main-background-color;
+  }
+
   @include mq(tab) {
     width: 20px;
     height: 20px;
   }
 }
+
+// content
 
 .modal-location__title {
   margin-bottom: 20px;
@@ -83,32 +111,8 @@
   }
 }
 
-.modal-btn {
-  padding: 12px 34px;
-  background-color: $accent-color;
-  border-radius: 10px;
+.location-modal__btn {
+  display: inline-block;
 
-  font-weight: 600;
-  font-size: 12px;
   line-height: 1.25;
-  text-align: center;
-  color: $second-text-color;
-}
-
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-  background-color: rgba(0, 0, 0, 0.3);
-  opacity: 1;
-  @include transitionM(opacity);
-}
-
-.backdrop.is-hidden-location {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
 }
