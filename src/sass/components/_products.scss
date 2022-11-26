@@ -1,0 +1,316 @@
+.product_slogan {
+  margin-top: 60px;
+  margin-bottom: 148px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  text-transform: uppercase;
+  color: #131313;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .product_slogan {
+    font-size: 22px;
+    margin-bottom: 200px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product_slogan {
+    font-size: 30px;
+    line-height: 1.23;
+    margin-bottom: 303px;
+  }
+}
+
+.slogan_accent {
+  margin-top: 12px;
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.26;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .slogan_accent {
+    font-size: 34px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .slogan_accent {
+    font-size: 36px;
+  }
+}
+
+.product_heading {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .product_heading {
+    padding-top: 123px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .product_heading {
+    padding-top: 108px;
+    margin-bottom: 40px;
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product_heading {
+    padding-top: 165px;
+    margin: 0 auto;
+    margin-bottom: 66px;
+    font-size: 30px;
+  }
+}
+
+.text_wrap-icecream {
+  width: 200px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 101px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .text_wrap-icecream {
+    width: 172px;
+    height: 144px;
+    margin-bottom: 81px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .text_wrap-icecream {
+    width: 246px;
+    height: 147px;
+    margin-bottom: 45px;
+  }
+}
+
+.text_wrap-coffee {
+  width: 200px;
+  height: 148px;
+  margin: 0 auto;
+  margin-bottom: 53px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .text_wrap-coffee {
+    width: 172px;
+    height: 175px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .text_wrap-coffee {
+    width: 242px;
+    height: 138px;
+    margin-bottom: 54px;
+  }
+}
+
+.text_wrap-milk {
+  width: 200px;
+  height: 132px;
+  margin: 0 auto;
+  margin-bottom: 73px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .text_wrap-milk {
+    width: 172px;
+    height: 150px;
+    margin-bottom: 75px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .text_wrap-milk {
+    width: 242px;
+    height: 142px;
+    margin-bottom: 50px;
+  }
+}
+
+.product_text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.76;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #131313;
+}
+
+@media screen and (min-width: 1200px) {
+  .product_text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .product_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.product_item {
+  position: relative;
+  width: 280px;
+  height: 420px;
+  margin: 0 auto;
+  margin-bottom: 168px;
+  border-radius: 24px;
+}
+
+.product_item:first-child {
+  background-color: #aec6a5;
+}
+
+.product_item:nth-child(2) {
+  background-color: #efd478;
+}
+
+.product_item:nth-child(3) {
+  background-color: #d6936d;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .product_item {
+    width: 224px;
+    height: 428px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product_item {
+    width: 370px;
+    height: 536px;
+    margin-bottom: 0;
+  }
+}
+
+.product_img {
+  position: absolute;
+  left: 50%;
+  top: -50%;
+  transform: translate(-50%, 50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .product_img {
+    width: 200px;
+    height: 197px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product_img {
+    width: 302px;
+    height: 305px;
+    transform: translate(-50%, 30%);
+  }
+}
+
+.product_picture::before {
+  content: ' ';
+  position: absolute;
+  left: 50%;
+  top: -50%;
+  transform: translate(-50%, 50%);
+  margin-top: 11px;
+
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.icecream::before {
+  background: linear-gradient(0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)),
+    #d9d9d9;
+  box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+}
+
+.coffee::before {
+  background: linear-gradient(0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)),
+    #d9d9d9;
+  box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+}
+
+.milk::before {
+  background: linear-gradient(0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)),
+    #d9d9d9;
+  box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 1200px) {
+  .product_picture::before {
+    left: 50%;
+    top: -50%;
+    margin-top: 16px;
+    width: 302px;
+    height: 305px;
+    border-radius: 50%;
+    transform: translate(-50%, 30%);
+  }
+}
+
+.product_button {
+  margin-right: 120px;
+  margin-left: 120px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .product_button {
+    margin-left: 92px;
+    margin-right: 92px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product_button {
+    margin-right: 165px;
+    margin-left: 165px;
+  }
+}
