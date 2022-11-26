@@ -1,4 +1,4 @@
-.about-container {
+.about {
   padding-top: 60px;
   padding-bottom: 50px;
 
@@ -70,10 +70,9 @@
 }
 
 .about-subtitle {
-  font-family: 'Montserrat', sans-serif;
+  font-family: $font-family;
   // width: 210px;
   margin: 0 auto;
-  font-style: bold;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.2;
@@ -97,7 +96,6 @@
 .about-title {
   font-family: $font-family-title;
   font-weight: 400;
-  font-style: Book;
   font-size: 30px;
   width: 210px;
   margin: 0 auto;
