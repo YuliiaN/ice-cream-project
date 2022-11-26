@@ -75,7 +75,7 @@
 .order {
     
     margin: 0 auto;
-    height: 100vw;
+    height: 90vw;
     overflow: auto;
     @include mq(tab) {
         width: 500px;
@@ -149,6 +149,7 @@
     font-family: $font-family;
     padding: 8px 12px;
     width: 100%;
+    color: $second-text-color;
     height: 84px;
     font-size: 12px;
     resize: none;
@@ -166,7 +167,7 @@
     &:focus {
         border-color: $accent-color;
     }
-        &::placeholder {
+    &::placeholder {
             color: $second-text-color;
             font-size: 12px;
     
