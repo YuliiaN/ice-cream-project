@@ -40,6 +40,7 @@
     height: 95%;
     @include mq (tab) {
         min-width: 600px;
+        height: auto;
     }
 
 
@@ -76,11 +77,11 @@
 .order {
     
     margin: 0 auto;
-    // height: 95%;
+    height: 95%;
     overflow: auto;
     @include mq(tab) {
         width: 500px;
-        // height: auto;
+        height: auto;
         margin: 0 auto;
     }
 }
