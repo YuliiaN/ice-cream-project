@@ -6,5 +6,6 @@ import './js/menu-burger-tablet.js';
 import './js/swiper.js';
 import './js/new-swiper.js';
 import './js/modal-cow.js';
+import './js/modal-about-product.js';
 
 
