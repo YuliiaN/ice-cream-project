@@ -1,0 +1,299 @@
+.modal-about-product {
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    @include transitionM(opacity);
+    @include transitionM(visibility);
+}
+
+.modal-about-product.is-hidden-about-product {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.modal-about-product.is-hidden-about-product .about-product {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.about-product-modal {
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    justify-content: right;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    padding: 28px;
+    background-color: $main-text-color;
+    border-radius: 10px;
+    @include transitionM(transform);
+    border: 2px solid $accent-color;
+    width: 280px;
+    height: 95%;
+
+    @include mq (tab) {
+        min-width: 600px;
+    }
+
+
+}
+
+.about-product__button {
+    position: absolute;
+    display: inline-flex;
+    top: 12px;
+    right: 12px;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: none;
+
+    color: $second-text-color;
+    background-color: transparent;
+    @include transitionM(color);
+
+    &:hover,
+    &:focus {
+        color: $button-color;
+    }
+}
+
+.about-product__icon {
+    fill: currentColor;
+    flex-grow: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.about-product {
+
+    margin: 0 auto;
+    // height: 95%;
+    overflow: auto;
+
+    @include mq(tab) {
+        width: 500px;
+        // height: auto;
+        margin: 0 auto;
+    }
+}
+
+.about-product__title {
+    margin-bottom: 83px;
+    font-size: 20px;
+    line-height: calc(28/20);
+    font-family: $font-family-title;
+    text-align: center;
+    color: $second-text-color;
+
+}
+
+.order__input {
+    padding: 8px 12px;
+    width: 100%;
+    height: 32px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 12px;
+    color: $second-text-color;
+    background-color: rgba(248, 210, 78, 0.1);
+    @include transitionM(border);
+    border: 1px solid $main-background-color;
+
+    &:focus {
+        border-color: $accent-color;
+    }
+
+    &::placeholder {
+        color: $second-text-color;
+        font-size: 12px;
+
+        @include mq(tab) {
+            font-size: 14px;
+        }
+    }
+
+    @include mq(tab) {
+        padding: 11px 16px;
+    }
+}
+
+
+
+.order__field {
+    position: relative;
+    margin-bottom: 12px;
+    color: $second-text-color;
+
+    @include mq (tab) {
+        margin-bottom: 16px;
+    }
+}
+
+.order__field--margin {
+    margin-bottom: 24px;
+
+    @include mq (tab) {
+        margin-bottom: 32px;
+    }
+}
+
+
+.order__feedback {
+    display: block;
+    font-family: $font-family;
+    padding: 8px 12px;
+    width: 100%;
+    color: $second-text-color;
+    height: 84px;
+    font-size: 12px;
+    resize: none;
+    border: 1px solid $main-background-color;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgba(248, 210, 78, 0.1);
+    @include transitionM(border);
+
+    @include mq(tab) {
+        padding: 11px 16px;
+    }
+
+
+    &:focus {
+        border-color: $accent-color;
+    }
+
+    &::placeholder {
+        color: $second-text-color;
+        font-size: 12px;
+
+        @include mq(tab) {
+            font-size: 14px;
+        }
+    }
+}
+
+.btn-buy-now {
+    display: block;
+    margin: 0 auto;
+}
+
+.order__form {
+    max-width: 368px;
+    margin: 0 auto;
+}
+
+
+
+.about-product__img {
+    position: relative;
+}
+
+.chocolate-icecream {
+    position: absolute;
+    top: -120%;
+    transform: translateY(50%);
+    width: 180px;
+    left: -18%;
+}
+
+
+
+
+
+
+
+.kcal {
+    width: 53px;
+    height: 72px;
+    border: 2px solid $card-one-color;
+    border-radius: 40px;
+    text-align: center;
+    position: relative;
+    @include mq(tab) {
+        width: 65px;
+        height: 90px;
+    }
+}
+
+.kcal-text {
+    margin-top: 52px;
+    font-size: 10px;
+    line-height: calc(12/10);
+    @include mq(tab) {
+            font-size: 12px;
+            line-height: calc(15/12);
+            margin-top: 61px;
+        }
+}
+
+.grams {
+    width: 43px;
+    height: 43px;
+    border: 2px solid $card-one-color;
+    border-radius: 50%;
+    text-align: center;
+
+    background-color: $card-one-color;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    @include mq(tab) {
+            width: 53px;
+            height: 53px;
+        }
+}
+
+.grams-text {
+    padding: 8px 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: calc(28/10);
+    color: $second-text-color;
+    @include mq(tab) {
+            font-size: 12px;
+            line-height: calc(28/12);
+            margin-top: 61px;
+            padding: 12px 0;
+        }
+}
+
+.calories {
+    display: flex;
+    gap: 9px;
+    @include mq(tab) {
+        gap: 20px;
+        }
+}
+
+.ingredients__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ingredients__text {
+    font-size: 14px;
+    line-height: 176%;
+    color: $second-text-color;
+}
+
+.ingredients__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(28/20);
+}
