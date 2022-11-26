@@ -1,4 +1,4 @@
-.modal-about-product {
+.modal {
     position: fixed;
     margin-left: auto;
     margin-right: auto;
@@ -13,13 +13,13 @@
     @include transitionM(visibility);
 }
 
-.modal-about-product.is-hidden-about-product {
+.modal.is-hidden-about-product {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
 }
 
-.modal-about-product.is-hidden-about-product .about-product {
+.modal.is-hidden-about-product .about-product {
     transform: translate(-50%, -50%) scale(1.1);
 }
 
