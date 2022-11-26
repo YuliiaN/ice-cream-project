@@ -1,0 +1,104 @@
+// backdrop
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    @include transitionM(opacity);
+}
+
+.backdrop.is-hidden-cow {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+// modal styles
+
+.modal-cow {
+    min-width: 280px;
+    padding: 28px;
+    background-color: $white-color;
+    border: 2px solid $accent-color;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+
+    @include mq(tab) {
+        width: 568px;
+        padding: 32px 60px;
+    }
+}
+
+.modal-cow__close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+    border: none;
+
+    @include mq(tab) {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.modal-cow__close-icon {
+    width: 16px;
+    height: 16px;
+
+    @include transitionM(fill);
+
+    .modal-cow__close-btn:hover & {
+        fill: $main-background-color;
+    }
+
+    @include mq(tab) {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+// content
+
+.modal-cow__title {
+    margin-bottom: 20px;
+
+    font-family: $font-family-title;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $second-text-color;
+
+    @include mq(tab) {
+        margin-bottom: 32px;
+
+        font-size: 20px;
+        line-height: 1.4;
+    }
+}
+
+.modal-cow__text {
+    font-size: 16px;
+    line-height: 140%;
+    color: $second-text-color;
+}
