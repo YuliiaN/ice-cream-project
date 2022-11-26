@@ -115,7 +115,7 @@
 }
 
 .video-cow {
-    width: 224px;
+    min-width: 224px;
     height: 199px;
     @include mq(tab) {
         width: 448px;
