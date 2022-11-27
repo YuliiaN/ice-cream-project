@@ -142,7 +142,7 @@
   display: flex;
   align-items: center;
 
-  color: #84a178;
+  color: $main-background-color;
   fill: currentColor;
 
   @include transitionM(color);
@@ -157,6 +157,8 @@
 .footer__sm-icon {
   width: 32px;
   height: 32px;
+
+  cursor: pointer;
 
   @include mq(tab) {
     width: 34px;
@@ -185,6 +187,7 @@
 
 .footer__tel-link {
   color: $main-text-color;
+  cursor: pointer;
 }
 
 .footer__copy {
