@@ -140,6 +140,8 @@
   letter-spacing: 0.04em;
   color: $address-color;
 
+  cursor: pointer;
+
   &:hover {
     text-decoration: underline;
   }
@@ -158,6 +160,8 @@
   display: block;
   line-height: 1.5;
   color: $second-text-color;
+
+  cursor: pointer;
 
   @include mq(tab) {
     line-height: 1.83;
