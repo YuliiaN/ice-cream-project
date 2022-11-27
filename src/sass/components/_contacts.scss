@@ -53,6 +53,8 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 
+  @include transitionM(box-shadow);
+
   &:not(:last-child) {
     margin-bottom: 20px;
 
@@ -69,6 +71,11 @@
   @include mq(desk) {
     width: calc((100% - 32px * 2) / 3);
     padding: 40px 40px;
+  }
+
+  &:hover {
+    box-shadow: 3px 3px 20px rgba(65, 65, 65, 0.5),
+      -3px -3px 20px rgba(65, 65, 65, 0.5);
   }
 }
 
@@ -87,12 +94,18 @@
   background-color: $accent-color;
   border-radius: 4px;
 
+  @include transitionM(transform);
+
   @include mq(tab) {
     padding: 0 11px;
     margin-bottom: 32px;
 
     font-size: 16px;
     line-height: 1.87;
+  }
+
+  .contacts__list-item:hover & {
+    transform: scale(1.1);
   }
 }
 
@@ -189,12 +202,4 @@
   @include mq(mob-only) {
     margin-bottom: 16px;
   }
-}
-
-// shadow
-
-.card-shadow {
-  box-shadow: -2px -2px 5px rgba(255, 252, 244, 0.5),
-    2px 2px 5px rgba(255, 252, 244, 0.5), 1px 1px 10px rgba(217, 183, 63, 0.5),
-    -1px -1px 10px rgba(217, 183, 63, 0.5);
 }
