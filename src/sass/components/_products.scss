@@ -436,3 +436,71 @@
 .product__icon {
   fill: currentColor;
 }
+
+// products card hover
+
+.product_item:hover {
+  box-shadow: -2px -2px 15px rgba(124, 124, 114, 0.5),
+    2px 2px 15px rgba(124, 124, 114, 0.5), 3px 3px 15px rgba(121, 147, 111),
+    -3px -3px 15px rgba(121, 147, 111);
+}
+
+.first_product:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(121, 147, 111, 0.7),
+      rgba(121, 147, 111, 0.7)
+    ),
+    #d9d9d9;
+
+  & {
+    @include transitionM(background);
+    @include transitionM(box-shadow);
+  }
+}
+
+.second_product:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(217, 177, 33, 0.7),
+      rgba(217, 177, 33, 0.7)
+    ),
+    #d9d9d9;
+
+  & {
+    @include transitionM(background);
+    @include transitionM(box-shadow);
+  }
+}
+
+.third_product:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(176, 97, 52, 0.7),
+      rgba(176, 97, 52, 0.7)
+    ),
+    #d9d9d9;
+
+  & {
+    @include transitionM(background);
+    @include transitionM(box-shadow);
+  }
+}
+
+// card text hover
+
+.product_item:hover .product_heading,
+.product_item:hover .product_text {
+  color: $main-text-color;
+}
+
+.product_heading,
+.product_text {
+  transition: color 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// card svg arrow hover
+
+.product_item:hover .product__icon {
+  color: $main-text-color;
+}

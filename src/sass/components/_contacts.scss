@@ -189,29 +189,8 @@
 
 // shadow
 
-// .card-shadow {
-//   box-shadow: -2px -2px 5px rgba(255, 252, 244, 0.5),
-//     2px 2px 5px rgba(255, 252, 244, 0.5), 1px 1px 10px rgba(217, 183, 63, 0.5),
-//     -1px -1px 10px rgba(217, 183, 63, 0.5);
-// }
-
-// .card-shadow-green:hover {
-//   box-shadow: -2px -2px 10px rgba(124, 124, 114, 0.5),
-//     2px 2px 10px rgba(124, 124, 114, 0.5), 1px 1px 10px rgb(120, 136, 115),
-//     -1px 1px 10px rgb(120, 136, 115);
-// }
-
-// .card-shadow:hover {
-//   -webkit-box-shadow: 5px 5px 14px 0px rgba(241, 242, 217, 0.6),
-//     -5px -5px 14px 0px rgba(241, 242, 217, 0.6);
-//   -moz-box-shadow: 5px 5px 14px 0px rgba(241, 242, 217, 0.6),
-//     -5px -5px 14px 0px rgba(241, 242, 217, 0.6);
-//   box-shadow: 5px 5px 14px 0px rgba(241, 242, 217, 0.6),
-//     -5px -5px 14px 0px rgba(241, 242, 217, 0.6);
-// }
-
-// .card-shadow-green:hover {
-//   -webkit-box-shadow: 5px 5px 14px 0px rgba(115, 115, 102, 1);
-//   -moz-box-shadow: 5px 5px 14px 0px rgba(115, 115, 102, 1);
-//   box-shadow: 5px 5px 14px 0px rgba(115, 115, 102, 1);
-// }
+.card-shadow {
+  box-shadow: -2px -2px 5px rgba(255, 252, 244, 0.5),
+    2px 2px 5px rgba(255, 252, 244, 0.5), 1px 1px 10px rgba(217, 183, 63, 0.5),
+    -1px -1px 10px rgba(217, 183, 63, 0.5);
+}
