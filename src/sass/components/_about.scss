@@ -205,3 +205,37 @@
 .about-button {
   display: inline-flex;
 }
+
+.about-title {
+
+  position: relative;
+}
+
+.about-title:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  $main-text-color: 40%;
+  $accent-color: 60%;
+  background: linear-gradient(135deg,
+      transparent $main-text-color,
+      $main-background-color $accent-color);
+  background-size: 300% 100%;
+  background-origin: top left;
+
+  animation: fadeIn 5s ease-out;
+  background-position-x: 0%;
+}
+
+@keyframes fadeIn {
+  0% {
+    background-position-x: 100%;
+  }
+
+  100% {
+    background-position-x: 0%;
+  }
+}
