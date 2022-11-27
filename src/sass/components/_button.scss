@@ -35,6 +35,8 @@
   border: transparent;
   border-radius: 10px;
 
+  cursor: pointer;
+
   &:hover,
   &:focus {
     background-color: $button-color;
@@ -45,10 +47,7 @@
   }
 
   @include mq(desk) {
-
-
     font-size: 14px;
-
   }
 }
 
@@ -72,7 +71,6 @@
   @include transitionM(background-color);
   @include transitionM(color);
   @include transitionM(border);
-
 }
 
 .btn--small {
@@ -100,8 +98,6 @@
     padding: 12px 34px;
     font-size: 14px;
   }
-
-
 }
 
 .btn__icon {
@@ -111,7 +107,6 @@
   .btn--transparent:focus & {
     fill: currentColor;
   }
-
 }
 
 // button-anchor
@@ -129,6 +124,8 @@
 
   border: none;
 
+  cursor: pointer;
+
   &:hover {
     color: $button-color;
   }
@@ -138,20 +135,15 @@
     color: $main-text-color;
   }
 
-    @include mq(tab) {
-      padding: 11px 11px;
-  
-    
-    }
+  @include mq(tab) {
+    padding: 11px 11px;
+  }
 
   @include mq(desk) {
     padding: 12px 22px;
-
     font-size: 14px;
     line-height: 1.2;
   }
 
   @include transitionM(color);
 }
-
-
