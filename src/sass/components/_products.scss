@@ -277,6 +277,9 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
 
   @include mq(tab) {
     width: 200px;
