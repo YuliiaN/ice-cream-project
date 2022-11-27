@@ -39,7 +39,7 @@
 
   width: 280px;
   overflow: auto;
-  max-height: 984px;
+  height: 90%;
 
   &::-webkit-scrollbar {
     width: 5px;
@@ -52,6 +52,7 @@
 
   @include mq(tab) {
     width: 568px;
+    height: auto;
   }
 }
 
