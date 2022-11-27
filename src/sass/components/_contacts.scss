@@ -186,3 +186,11 @@
     margin-bottom: 16px;
   }
 }
+
+// shadow
+
+.card-shadow {
+  box-shadow: -2px -2px 5px rgba(255, 252, 244, 0.5),
+    2px 2px 5px rgba(255, 252, 244, 0.5), 1px 1px 10px rgba(217, 183, 63, 0.5),
+    -1px -1px 10px rgba(217, 183, 63, 0.5);
+}
