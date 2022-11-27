@@ -9,8 +9,8 @@
 // modal styles
 
 .modal-franchise {
-  min-width: 280px;
-  height: 95%;
+  width: 90%;
+  max-height: 674px;
   overflow: auto;
   padding: 28px;
 
@@ -32,6 +32,10 @@
   &::-webkit-scrollbar-thumb {
     background-color: $card-one-color;
     border-radius: 10px;
+  }
+
+  @include mq(mob) {
+    width: 432px;
   }
 
   @include mq(tab) {

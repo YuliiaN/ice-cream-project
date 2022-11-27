@@ -1,56 +1,89 @@
 <div class="modal-buy is-hidden-buy-now" data-modal-buy-now>
-    <div class="form-buy-modal">
-        <button class="form-buy-modal__button" type="button" data-modal-close-buy-now>
-            <svg class="form-buy-modal__icon">
-                <use href="./images/icons.svg#icon-close-modal"></use>
-            </svg>
-        </button>
-        <div class="order">
-            <p class="order__title">Buy now</p>
-            <div class="order-products">
-                <div class="products-modal-one">
-                    <div class="img-modal__products-one">
-                        <img class="product-one" src="./images/img-modal-full.png" alt="icecream" width="252">
-                    </div>
-                    <div class="product__icecream">
-                        ice cream
-                    </div>
-                </div>
-                <div class="products-modal-second">
-                    <div class="img-modal__products-second">
-                        <img class="product-second" src="./images/img-modal-full-second.png" alt="icecream" width="252">
-                    </div>
-                    <div class="product__icecream product__icecream--second">
-                        ice coffee
-                    </div>
-                </div>
-                <div class="products-modal-third">
-                    <div class="img-modal__products-third">
-                        <img class="product-third" src="./images/img-modal-full-third.png" alt="icecream" width="252">
-                    </div>
-                    <div class="product__icecream product__icecream--third">
-                        milkshake
-                    </div>
-                </div>
-            </div>
-            <form class="order__form">
-                <div class="order__field">
-                    <label for="name-order" class="order__label"></label>
-                    <input type="text" class="order__input" name="name" id="name-order" placeholder="Name">
-                </div>
-                <div class="order__field">
-                    <label for="phone-order" class="order__label"></label>
-                    <input type="tel" class="order__input" name="phone" id="phone-order" placeholder="Phone">
-                </div>
-                <div class="order__field order__field--margin">
-                    <label for="feedback-order" class="order__label"></label>
-                    <textarea name="feedback" id="feedback-order" placeholder="Comment"
-                        class="order__feedback"></textarea>
-                </div>
-                <div class="order__button">
-                    <button type="submit" class="btn btn-buy-now">Submit</button>
-                </div>
-            </form>
+  <div class="form-buy-modal">
+    <button
+      class="form-buy-modal__button"
+      type="button"
+      data-modal-close-buy-now
+    >
+      <svg class="form-buy-modal__icon">
+        <use href="./images/icons.svg#icon-close-modal"></use>
+      </svg>
+    </button>
+    <div class="order">
+      <p class="order__title">Buy now</p>
+      <div class="order-products">
+        <div class="products-modal-one">
+          <div class="img-modal__products-one">
+            <img
+              class="product-one"
+              src="./images/img-modal-full.png"
+              alt="icecream"
+              width="252"
+            />
+          </div>
+          <div class="product__icecream">ice cream</div>
         </div>
+        <div class="products-modal-second">
+          <div class="img-modal__products-second">
+            <img
+              class="product-second"
+              src="./images/img-modal-full-second.png"
+              alt="icecream"
+              width="252"
+            />
+          </div>
+          <div class="product__icecream product__icecream--second">
+            ice coffee
+          </div>
+        </div>
+        <div class="products-modal-third">
+          <div class="img-modal__products-third">
+            <img
+              class="product-third"
+              src="./images/img-modal-full-third.png"
+              alt="icecream"
+              width="252"
+            />
+          </div>
+          <div class="product__icecream product__icecream--third">
+            milkshake
+          </div>
+        </div>
+      </div>
+      <form class="order__form">
+        <div class="order__field">
+          <label for="name-order" class="order__label"></label>
+          <input
+            type="text"
+            class="order__input"
+            name="name"
+            id="name-order"
+            placeholder="Name"
+          />
+        </div>
+        <div class="order__field">
+          <label for="phone-order" class="order__label"></label>
+          <input
+            type="tel"
+            class="order__input"
+            name="phone"
+            id="phone-order"
+            placeholder="Phone"
+          />
+        </div>
+        <div class="order__field order__field--margin">
+          <label for="feedback-order" class="order__label"></label>
+          <textarea
+            name="feedback"
+            id="feedback-order"
+            placeholder="Comment"
+            class="order__feedback"
+          ></textarea>
+        </div>
+        <div class="order__button">
+          <button type="submit" class="btn btn-buy-now">Submit</button>
+        </div>
+      </form>
     </div>
+  </div>
 </div>
