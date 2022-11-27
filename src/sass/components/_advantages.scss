@@ -68,6 +68,21 @@
     }
 }
 
+.cow::before {
+    animation: 10s linear 0s normal none infinite running cow;
+}
+
+@keyframes cow{
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
 .weight::before {
     content: url('../images/weight.png');
     display: block;
@@ -82,6 +97,21 @@
     }
 }
 
+.weight::before {
+    animation: 10s linear 0s normal none infinite running weight;
+}
+
+@keyframes weight {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
 .ice-crema::before {
     content: url('../images/ice-crema.png');
     display: block;
@@ -94,6 +124,21 @@
     @media screen and (min-width: 1200px) {
         margin-bottom: 40px;
     }
+}
+
+.ice-crema::before {
+    animation: 10s linear 0s normal none infinite running ice-crema;
+}
+
+@keyframes ice-crema {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
 }
 
 .advantages__descr {

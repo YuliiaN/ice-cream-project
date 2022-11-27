@@ -7,5 +7,6 @@ import './js/swiper.js';
 import './js/new-swiper.js';
 import './js/modal-cow.js';
 import './js/modal-about-product.js';
+import './js/anim.js';
 
 
