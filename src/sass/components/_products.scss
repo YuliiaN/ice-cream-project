@@ -294,7 +294,7 @@
 }
 
 .product_item.first_product::after {
-  background-image: url('../images/icecream_mobile-1x.jpg');
+  background-image: url('../images/icecream-mob@1x-min.jpg');
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -302,13 +302,13 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .product_item.first_product::after {
-    background-image: url('../images/icecream_mobile-2x.jpg');
+    background-image: url('../images/icecream-mob@2x-min.jpg');
   }
 }
 
 @media screen and (min-width: 768px) {
   .product_item.first_product::after {
-    background-image: url('../images/icecream_tablet-1x.jpg');
+    background-image: url('../images/icecream-tablet@1x-min.jpg');
   }
 }
 
@@ -317,13 +317,13 @@
   screen and (min-width: 768px) and (min-resolution: 192dpi),
   screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .product_item.first_product::after {
-    background-image: url('../images/icecream_tablet-2x.jpg');
+    background-image: url('../images/icecream-tablet@2x-min.jpg');
   }
 }
 
 @media screen and (min-width: 1200px) {
   .product_item.first_product::after {
-    background-image: url('../images/icecream_desktop-1x.jpg');
+    background-image: url('../images/icecream-desk@1x-min.jpg');
   }
 }
 
@@ -332,12 +332,12 @@
   screen and (min-width: 1200px) and (min-resolution: 192dpi),
   screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .product_item.first_product::after {
-    background-image: url('../images/icecream_desctop-2x.jpg');
+    background-image: url('../images/icecream-desk@2x-min.jpg');
   }
 }
 
 .product_item.second_product::after {
-  background-image: url('../images/coffee_mobile-1x.jpg');
+  background-image: url('../images/icecream2-mob@1x-min.jpg');
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -345,13 +345,13 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .product_item.second_product::after {
-    background-image: url('../images/coffee_mobile-2x.jpg');
+    background-image: url('../images/icecream2-mob@2x-min.jpg');
   }
 }
 
 @media screen and (min-width: 768px) {
   .product_item.second_product::after {
-    background-image: url('../images/coffee_tablet-2x.jpg');
+    background-image: url('../images/icecream2-tablet@1x-min.jpg');
   }
 }
 
@@ -360,13 +360,13 @@
   screen and (min-width: 768px) and (min-resolution: 192dpi),
   screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .product_item.second_product::after {
-    background-image: url('../images/coffee_tablet-2x.jpg');
+    background-image: url('../images/icecream2-tablet@2x-min.jpg');
   }
 }
 
 @media screen and (min-width: 1200px) {
   .product_item.second_product::after {
-    background-image: url('../images/coffee_desktop-1x.jpg');
+    background-image: url('../images/icecream2-desk@1x-min.jpg');
   }
 }
 
@@ -375,12 +375,12 @@
   screen and (min-width: 1200px) and (min-resolution: 192dpi),
   screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .product_item.second_product::after {
-    background-image: url('../images/coffee_desktop-2x.jpg');
+    background-image: url('../images/icecream2-desk@2x-min.jpg');
   }
 }
 
 .product_item.third_product::after {
-  background-image: url('../images/milk_mobile-1x.jpg');
+  background-image: url('../images/icecream3-mob@1x-min.jpg');
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -388,13 +388,13 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .product_item.third_product::after {
-    background-image: url('../images/milk_mobile-2x.jpg');
+    background-image: url('../images/icecream3-mob@2x-min.jpg');
   }
 }
 
 @media screen and (min-width: 768px) {
   .product_item.third_product::after {
-    background-image: url('../images/milk_tablet-1x.jpg');
+    background-image: url('../images/icecream3-tablet@1x-min.jpg');
   }
 }
 
@@ -403,13 +403,13 @@
   screen and (min-width: 768px) and (min-resolution: 192dpi),
   screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .product_item.third_product::after {
-    background-image: url('../images/milk_tablet-2x.jpg');
+    background-image: url('../images/icecream3-tablet@2x-min.jpg');
   }
 }
 
 @media screen and (min-width: 1200px) {
   .product_item.third_product::after {
-    background-image: url('../images/milk_desktop-1x.jpg');
+    background-image: url('../images/icecream3-desk@1x-min.jpg');
   }
 }
 
@@ -418,7 +418,7 @@
   screen and (min-width: 1200px) and (min-resolution: 192dpi),
   screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .product_item.third_product::after {
-    background-image: url('../images/milk_desktop-2x.jpg');
+    background-image: url('../images/icecream3-desk@2x-min.jpg');
   }
 }
 
