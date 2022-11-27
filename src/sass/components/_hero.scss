@@ -1,442 +1,411 @@
-
-
 .hero-content {
-    background-position: bottom;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image:
-            url('../images/mobile-hero-dots.png');
-    
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image:
-                url('../images/mobile-hero-dots-2x.png');
-        }
-    
-        @media screen and (min-width: 768px) {
-            background-image:
-                url('../images/tablet-dots.png');
-    
-            @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image:
-                    url('../images/tablet-dots-2x.png');
-            }
-        }
-    
-        @media screen and (min-width: 1200px) {
-            background-image:
-                url('../images/desk-dots.png');
-    
-            @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image:
-                    url('../images/desk-dots-2x.png');
-            }
-        }
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('../images/mobile-hero-dots.png');
 
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/mobile-hero-dots-2x.png');
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/tablet-dots.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/tablet-dots-2x.png');
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/desk-dots.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/desk-dots-2x.png');
+    }
+  }
 }
 
 .hero-content {
-    position: relative;
-    height: 450px;
-    padding-top: 38px;
-    padding-bottom: 236px;
-    @include mq(tab) {
-        height: 350px;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        }
-    @include mq(desk) {
-        padding-top: 14px;
-        padding-bottom: 332px;
-        height: 560px;
-    }
-    
+  position: relative;
+  height: 450px;
+  padding-top: 38px;
+  padding-bottom: 236px;
+  @include mq(tab) {
+    height: 350px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  @include mq(desk) {
+    padding-top: 14px;
+    padding-bottom: 332px;
+    height: 560px;
+  }
 }
 
 .hero__title {
-    font-family: $font-family-title;
-    font-size: 26px;
-    line-height: calc(33/26);
-    letter-spacing: 0.04em;
-    color: $main-text-color;
-    max-width: 247px;
-    text-transform: uppercase;
-    margin-bottom: 32px;
-    
+  font-family: $font-family-title;
+  font-size: 26px;
+  line-height: calc(33 / 26);
+  letter-spacing: 0.04em;
+  color: $main-text-color;
+  max-width: 247px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
 
-    @include mq(desk) {
-        font-size: 38px;
-        line-height: calc(48/38);
-        letter-spacing: 0.04em;
-        
-        max-width: 367px;
-    }
+  @include mq(desk) {
+    font-size: 38px;
+    line-height: calc(48 / 38);
+    letter-spacing: 0.04em;
+
+    max-width: 367px;
+  }
 }
 
 .hero__uppercase {
-    text-transform: uppercase;
-    font-size: 34px;
-    line-height: calc(33/34);
-    @include mq(desk) {
-            font-size: 38px;
-            line-height: calc(48/38);
-            letter-spacing: 0.04em;
-            
-        }
-
+  text-transform: uppercase;
+  font-size: 34px;
+  line-height: calc(33 / 34);
+  @include mq(desk) {
+    font-size: 38px;
+    line-height: calc(48 / 38);
+    letter-spacing: 0.04em;
+  }
 }
 
 .hero__list {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
-
-
-
 
 .hero__icecreams {
-    position: absolute;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  z-index: 4;
+  transform: translateX(50%);
+  height: 219px;
+  width: 176px;
+  @include mq(tab) {
+    height: 333px;
+    right: 100px;
+    transform: translateX(0);
     bottom: 0;
-    right: 50%;
-    z-index: 4;
-    transform: translateX(50%);
-    height: 219px;
-    width: 176px;
-    @include mq(tab) {
-        height: 333px;
-        right: 100px;
-        transform: translateX(0);
-        bottom: 0;
-        width: 268px;
-        }
-        
-        @include mq(desk) {
-            height: 560px;
-            right: 90px;
-            transform: translateX(0);
-            bottom: 0;
-            width: 456px;
-        }
+    width: 268px;
+  }
+
+  @include mq(desk) {
+    height: 560px;
+    right: 90px;
+    transform: translateX(0);
+    bottom: 0;
+    width: 456px;
+  }
 }
 
-
 .hero__plates {
-    display: none;
+  display: none;
 
-    @include mq(tab) {
-        display: block;
-        position: absolute;
-        left: 20px;
-        bottom: 6px;
-        z-index: 5;
-    }
-    @include mq(desk) {
-        bottom: 65px;
-        left: 16px;
-    }
-    
-
+  @include mq(tab) {
+    display: block;
+    position: absolute;
+    left: 20px;
+    bottom: 6px;
+    z-index: 5;
+  }
+  @include mq(desk) {
+    bottom: 65px;
+    left: 16px;
+  }
 }
 
 .hero__plate {
-    animation: 10s linear 0s normal none infinite running hero__plate;
+  animation: 10s linear 0s normal none infinite running hero__plate;
 }
 
 @keyframes hero__plate {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
-
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-
-
 .hero__blurs {
-    position: absolute;
-        bottom: 0;
-        right: 50%;
-        z-index: 1;
-        transform: translateX(50%);
-        height: 236px;
-        width: 182px;
-    
-        @include mq(tab) {
-            height: 342px;
-            right: 100px;
-            transform: translateX(0);
-            bottom: 0;
-            width: 266px;
-        }
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  z-index: 1;
+  transform: translateX(50%);
+  height: 236px;
+  width: 182px;
 
-        @include mq(desk) {
-            height: 590px;
-            right: 90px;
-            transform: translateX(0);
-            bottom: 0;
-            width: 477px;
-        }
+  @include mq(tab) {
+    height: 342px;
+    right: 100px;
+    transform: translateX(0);
+    bottom: 0;
+    width: 266px;
+  }
+
+  @include mq(desk) {
+    height: 590px;
+    right: 90px;
+    transform: translateX(0);
+    bottom: 0;
+    width: 477px;
+  }
 }
 
 .hero-benefits {
-    display: none;
-    @include mq(tab) {
-        display: block;
-        position: absolute;
-        z-index: 1;
-        right: 32px;
-        top: 28px;
-    }
-    @include mq(desk) {
-        right: 16px;
-    }
+  display: none;
+  @include mq(tab) {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    right: 32px;
+    top: 28px;
+  }
+  @include mq(desk) {
+    right: 16px;
+  }
 }
 
 .hero-benefits__item {
-    &:not(:last-child) {
+  &:not(:last-child) {
     margin-bottom: 20px;
-    }
-    @include mq(desk) {
+  }
+  @include mq(desk) {
     &:not(:last-child) {
-        margin-bottom: 16px;
+      margin-bottom: 16px;
     }
-    }
+  }
 }
 
 .hero-benefits__numbers {
-    font-weight: 900;
-    font-size: 28px;
-    line-height: calc(34/28);
-    letter-spacing: 0.04em;
-    color: $second-text-color;
-    text-align: right;
-    margin-bottom: 4px;
-    @include mq(desk) {
-        font-size: 48px;
-        line-height: calc(56/48);
-    }
-
+  font-weight: 900;
+  font-size: 28px;
+  line-height: calc(34 / 28);
+  letter-spacing: 0.04em;
+  color: $second-text-color;
+  text-align: right;
+  margin-bottom: 4px;
+  @include mq(desk) {
+    font-size: 48px;
+    line-height: calc(56 / 48);
+  }
 }
 
 .hero-benefits__text {
-    font-size: 8px;
-    line-height: calc(10/8);
-    text-align: right;
-    @include mq(desk) {
-            font-size: 14px;
-            line-height: calc(17/14);
-        }
+  font-size: 8px;
+  line-height: calc(10 / 8);
+  text-align: right;
+  @include mq(desk) {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
 }
 
 .hero-text {
-    display: none;
-    @include mq(tab) {
-        display: block;
-        position: absolute;
-        left: 210px;
-        bottom: 22px;
-        }
-    @include mq(desk) {
-        left: 257px;
-        bottom: 103px;
-        }
+  display: none;
+  @include mq(tab) {
+    display: block;
+    position: absolute;
+    left: 210px;
+    bottom: 22px;
+  }
+  @include mq(desk) {
+    left: 257px;
+    bottom: 103px;
+  }
 }
-    
 
 .hero-text__text {
-    font-size: 12px;
-    line-height: calc(17/12);
-    width: 151px;
-    margin-bottom: 12px;
-    @include mq(desk) {
-        font-size: 14px;
-        line-height: calc(19/14);
-        margin-bottom: 24px;
-        width: 200px;
-        }
+  font-size: 12px;
+  line-height: calc(17 / 12);
+  width: 151px;
+  margin-bottom: 12px;
+  @include mq(desk) {
+    font-size: 14px;
+    line-height: calc(19 / 14);
+    margin-bottom: 24px;
+    width: 200px;
+  }
 }
 
 .hero-text__link {
-    &:hover, &:focus {
-        color: $second-text-color;
-    }
+  &:hover,
+  &:focus {
+    color: $second-text-color;
+  }
 }
 
 .hero-text__icon {
-    fill: currentColor;
+  fill: currentColor;
+  cursor: pointer;
 }
 
 .i-one {
-
-    position: absolute;
-    z-index: 1;
-    left: 37px;
-    top: 267px;
-    @include mq(tab) {
-            left: 330px;
-            top: 63px;
-        }
-    @include mq(desk) {
+  position: absolute;
+  z-index: 1;
+  left: 37px;
+  top: 267px;
+  @include mq(tab) {
+    left: 330px;
+    top: 63px;
+  }
+  @include mq(desk) {
     left: 447px;
     top: 86px;
-    }
+  }
 }
 
 .i-one__img {
-    animation: 10s linear 0s normal none infinite running i-one;
+  animation: 10s linear 0s normal none infinite running i-one;
 }
 
 @keyframes i-one {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
-
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .i-second {
+  position: absolute;
+  z-index: 1;
+  right: 50px;
+  top: 179px;
 
-    position: absolute;
-    z-index: 1;
-    right: 50px;
-    top: 179px;
+  @include mq(tab) {
+    right: 299px;
+    top: 21px;
+  }
 
-    @include mq(tab) {
-        right: 299px;
-        top: 21px;
-    }
-
-    @include mq(desk) {
-        right: 489px;
-        top: 19px;
-    }
+  @include mq(desk) {
+    right: 489px;
+    top: 19px;
+  }
 }
 
 .i-second__img {
-    animation: 10s linear 0s normal none infinite running i-second;
+  animation: 10s linear 0s normal none infinite running i-second;
 }
 
 @keyframes i-second {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
-
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .i-third {
+  position: absolute;
+  z-index: 1;
+  right: 30px;
+  top: 25px;
 
-    position: absolute;
-    z-index: 1;
-    right: 30px;
-    top: 25px;
+  @include mq(tab) {
+    right: 380px;
+    top: 180px;
+  }
 
-    @include mq(tab) {
-        right: 380px;
-        top: 180px;
-    }
-
-    @include mq(desk) {
-        right: 573px;
-        top: 380px;
-    }
+  @include mq(desk) {
+    right: 573px;
+    top: 380px;
+  }
 }
 
 .i-third__img {
-    animation: 10s linear 0s normal none infinite running i-third;
+  animation: 10s linear 0s normal none infinite running i-third;
 }
 
 @keyframes i-third {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
-
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .i-four {
+  position: absolute;
+  z-index: 1;
+  right: 5px;
+  bottom: 74px;
 
-    position: absolute;
-    z-index: 1;
-    right: 5px;
-    bottom: 74px;
+  @include mq(tab) {
+    right: 60px;
+    bottom: 60px;
+  }
 
-    @include mq(tab) {
-        right: 60px;
-        bottom: 60px;
-    }
-
-    @include mq(desk) {
-        right: 89px;
-        bottom: 100px;
-    }
+  @include mq(desk) {
+    right: 89px;
+    bottom: 100px;
+  }
 }
 
 .i-four__img {
-    animation: 10s linear 0s normal none infinite running i-four;
+  animation: 10s linear 0s normal none infinite running i-four;
 }
 
 @keyframes i-four {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
-
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-
 .hero__title {
-
-    position: relative;
+  position: relative;
 }
 
 .hero__title:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    $main-text-color: 40%;
-    $accent-color: 60%;
-    background: linear-gradient(135deg,
-            transparent $main-text-color,
-            $main-background-color $accent-color);
-    background-size: 300% 100%;
-    background-origin: top left;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  $main-text-color: 40%;
+  $accent-color: 60%;
+  background: linear-gradient(
+    135deg,
+    transparent $main-text-color,
+    $main-background-color $accent-color
+  );
+  background-size: 300% 100%;
+  background-origin: top left;
 
-    animation: fadeIn 5s ease-out;
-    background-position-x: 0%;
+  animation: fadeIn 5s ease-out;
+  background-position-x: 0%;
 }
 
 @keyframes fadeIn {
-    0% {
-        background-position-x: 100%;
-    }
+  0% {
+    background-position-x: 100%;
+  }
 
-    100% {
-        background-position-x: 0%;
-    }
+  100% {
+    background-position-x: 0%;
+  }
 }
-
