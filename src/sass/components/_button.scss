@@ -36,10 +36,12 @@
   border-radius: 10px;
 
   cursor: pointer;
+  @include transitionM(transform);
 
   &:hover,
   &:focus {
     background-color: $button-color;
+    transform: scale(1.1);
   }
 
   &:focus {
@@ -125,14 +127,17 @@
   border: none;
 
   cursor: pointer;
+  @include transitionM(transform);
 
   &:hover {
     color: $button-color;
+    transform: scale(1.1);
   }
 
   &:focus {
     outline: none;
     color: $main-text-color;
+    transform: scale(1.1);
   }
 
   @include mq(tab) {
