@@ -6,12 +6,16 @@
   pointer-events: none;
 }
 
+.backdrop-franchise {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 // modal styles
 
 .modal-franchise {
   width: 90%;
   max-height: 680px;
-  overflow: auto;
   padding: 28px;
 
   position: absolute;

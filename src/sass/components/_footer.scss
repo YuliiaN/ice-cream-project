@@ -30,9 +30,10 @@
   }
 
   @include mq(desk) {
-    left: 0;
+    left: 16px;
+    right: 16px;
     bottom: 44px;
-    width: 100%;
+    width: calc(100% - 32px);
   }
 }
 
