@@ -1,91 +1,106 @@
 <div class="modal is-hidden-about-product" data-modal-about-product>
-    <div class="about-product-modal">
-        <button class="about-product__button" type="button" data-modal-close-about-product>
-            <svg class="about-product__icon">
-                <use href="./images/icons.svg#icon-close-modal"></use>
-            </svg>
-        </button>
-        <div class="about-product">
-            <p class="about-product__title">Chololate
-            icecream</p>
-                
-            <img class="chocolate-icecream" src="./images/chocolate-icecream.png" alt="icecream">
-                
-
-        <div class="calories">
-            <div class="kcal">
-                <p class="kcal-text">kcal</p>
-                <div class="grams">
-                    <p class="grams-text">320</p>
-                </div>
-            </div>
-            <div class="kcal">
-                <p class="kcal-text">Protein</p>
-                <div class="grams">
-                    <p class="grams-text">4g</p>
-                </div>
-            </div>
-            <div class="kcal">
-                <p class="kcal-text">Fats</p>
-                <div class="grams">
-                    <p class="grams-text">8,2g</p>
-                </div>
-            </div>
-            <div class="kcal">
-                <p class="kcal-text">Carbs</p>
-                <div class="grams">
-                    <p class="grams-text">40,4g</p>
-                </div>
-            </div>
+  <div class="about-product-modal">
+    <button
+      class="about-product__button"
+      type="button"
+      data-modal-close-about-product
+    >
+      <svg class="about-product__icon">
+        <use href="./images/icons.svg#icon-close-modal"></use>
+      </svg>
+    </button>
+    <div class="about-product">
+      <p class="about-product__title">Chololate icecream</p>
+      <div class="ellipse">
+        <div class="chocolate-icecream"></div>
+      </div>
+      <div class="calories">
+        <div class="kcal">
+          <p class="kcal-text">kcal</p>
+          <div class="grams">
+            <p class="grams-text">320</p>
+          </div>
         </div>
-        <div class="ingredients">
-            <p class="ingredients__title">Ingredients</p>
-            <ul class="ingredients__list">
-                <li class="ingredients__item">
-                    <p class="ingredients__text">Milk</p>
-                    <p class="ingredients__text">100ml</p>
-                </li>
-                <li class="ingredients__item">
-                    <p class="ingredients__text">Belgian chocolate</p>
-                    <p class="ingredients__text">20g</p>
-                </li>
-                <li class="ingredients__item">
-                    <p class="ingredients__text">Cream</p>
-                    <p class="ingredients__text">150ml</p>
-                </li>
-                <li class="ingredients__item">
-                    <p class="ingredients__text">
-                        Cocoa powder
-                    </p>
-                    <p class="ingredients__text">30g</p>
-                </li>
-                <li class="ingredients__item">
-                    <p class="ingredients__text">Sugar</p>
-                    <p class="ingredients__text">40g</p>
-                </li>
-                <li class="ingredients__item">
-                    <p class="ingredients__text">Vanilla sugar</p>
-                    <p class="ingredients__text">10g</p>
-                </li>
-            </ul>
+        <div class="kcal">
+          <p class="kcal-text">Protein</p>
+          <div class="grams">
+            <p class="grams-text">4g</p>
+          </div>
         </div>
-        <form class="order__form">
-                <div class="order__field">
-                    <label for="name-product" class="order__label"></label>
-                    <input type="text" class="order__input" name="name" id="name-product" placeholder="Name">
-                </div>
-                <div class="order__field">
-                    <label for="phone-product" class="order__label"></label>
-                    <input type="tel" class="order__input" name="phone" id="phone-product" placeholder="Phone">
-                </div>
-                <div class="order__field order__field--margin">
-                    <label for="feedback-product" class="order__label"></label>
-                    <textarea name="feedback" id="feedback-product" placeholder="Comment" class="order__feedback"></textarea>
-                </div>
-                <div class="order__button">
-                    <button type="submit" class="btn btn-buy-now">Submit</button>
-                </div>
-        </form>
+        <div class="kcal">
+          <p class="kcal-text">Fats</p>
+          <div class="grams">
+            <p class="grams-text">8,2g</p>
+          </div>
         </div>
+        <div class="kcal">
+          <p class="kcal-text">Carbs</p>
+          <div class="grams">
+            <p class="grams-text">40,4g</p>
+          </div>
+        </div>
+      </div>
+      <div class="ingredients">
+        <p class="ingredients__title">Ingredients</p>
+        <ul class="ingredients__list">
+          <li class="ingredients__item">
+            <p class="ingredients__text">Milk</p>
+            <p class="ingredients__text">100ml</p>
+          </li>
+          <li class="ingredients__item">
+            <p class="ingredients__text">Belgian chocolate</p>
+            <p class="ingredients__text">20g</p>
+          </li>
+          <li class="ingredients__item">
+            <p class="ingredients__text">Cream</p>
+            <p class="ingredients__text">150ml</p>
+          </li>
+          <li class="ingredients__item">
+            <p class="ingredients__text">Cocoa powder</p>
+            <p class="ingredients__text">30g</p>
+          </li>
+          <li class="ingredients__item">
+            <p class="ingredients__text">Sugar</p>
+            <p class="ingredients__text">40g</p>
+          </li>
+          <li class="ingredients__item">
+            <p class="ingredients__text">Vanilla sugar</p>
+            <p class="ingredients__text">10g</p>
+          </li>
+        </ul>
+      </div>
+      <form class="order__form">
+        <div class="order__field">
+          <label for="name-product" class="order__label"></label>
+          <input
+            type="text"
+            class="order__input"
+            name="name"
+            id="name-product"
+            placeholder="Name"
+          />
+        </div>
+        <div class="order__field">
+          <label for="phone-product" class="order__label"></label>
+          <input
+            type="tel"
+            class="order__input"
+            name="phone"
+            id="phone-product"
+            placeholder="Phone"
+          />
+        </div>
+        <div class="order__field order__field--margin">
+          <label for="feedback-product" class="order__label"></label>
+          <textarea
+            name="feedback"
+            id="feedback-product"
+            placeholder="Comment"
+            class="order__feedback"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-buy-now">Submit</button>
+      </form>
     </div>
+  </div>
 </div>

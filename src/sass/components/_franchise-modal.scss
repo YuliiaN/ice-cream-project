@@ -29,15 +29,6 @@
 
   text-align: center;
 
-  &::-webkit-scrollbar {
-    width: 5px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: $card-one-color;
-    border-radius: 10px;
-  }
-
   @include mq(mob) {
     width: 432px;
   }
