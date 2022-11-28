@@ -10,7 +10,7 @@
 
 .modal-franchise {
   width: 90%;
-  max-height: 674px;
+  max-height: 680px;
   overflow: auto;
   padding: 28px;
 
@@ -60,6 +60,8 @@
   background-color: transparent;
   border: none;
 
+  cursor: pointer;
+
   @include mq(tab) {
     width: 24px;
     height: 24px;
@@ -69,6 +71,8 @@
 .modal-franchise__close-icon {
   width: 16px;
   height: 16px;
+
+  cursor: pointer;
 
   @include transitionM(fill);
 

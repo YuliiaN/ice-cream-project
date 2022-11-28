@@ -35,6 +35,7 @@
   border: transparent;
   border-radius: 10px;
 
+  cursor: pointer;
   @include transitionM(transform);
 
   &:hover,
@@ -125,6 +126,7 @@
 
   border: none;
 
+  cursor: pointer;
   @include transitionM(transform);
 
   &:hover {
@@ -144,7 +146,6 @@
 
   @include mq(desk) {
     padding: 12px 22px;
-
     font-size: 14px;
     line-height: 1.2;
   }

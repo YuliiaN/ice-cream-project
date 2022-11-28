@@ -71,6 +71,8 @@
   background-color: transparent;
   @include transitionM(color);
 
+  cursor: pointer;
+
   &:hover,
   &:focus {
     color: $button-color;
@@ -82,6 +84,8 @@
   flex-grow: 0;
   width: 24px;
   height: 24px;
+
+  cursor: pointer;
 }
 
 .order {
