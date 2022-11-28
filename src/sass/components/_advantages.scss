@@ -1,170 +1,198 @@
 .advantages {
-    
-    padding-bottom: 65px;
+  padding-bottom: 65px;
 
-    @media screen and (min-width: 768px) {
-        padding-bottom: 200px;
-    }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 200px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        
-        padding-bottom: 175px;
-    }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 175px;
+  }
 }
-
 
 .advantages__list {
-    @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: space-between;
-        gap: 80px;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        gap: 32px;
-    }
+  @media screen and (min-width: 1200px) {
+    gap: 32px;
+  }
 }
 
-.advantages__item  {
-    &:not(:last-child) {
+.advantages__item {
+  &:not(:last-child) {
     margin-bottom: 28px;
-}
+  }
 }
 
 .advantages__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: $main-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $main-text-color;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.23;
     margin-bottom: 16px;
+  }
 
-    @media screen and (min-width: 768px) {
-        font-size: 48px;
-        line-height: 1.23;
-        margin-bottom: 16px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        font-size: 58px;
-        line-height: 1.22;
-        
-    }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.22;
+  }
 }
 
 .cow::before {
-    content: url('../images/cow.png');
-    display: block;
-    margin-bottom: 16px;
+  //   content: url('../images/cow.png');
+  content: '';
+  background-image: url('../images/icon-cow@1x-min.png'); // new
+  background-size: 50px 50px; // new
+  display: block;
+  margin-left: auto; // new
+  margin-right: auto; // new
+  margin-bottom: 16px;
+  width: 50px; // new
+  height: 50px; // new
 
-    @media screen and (min-width: 768px) {
-        margin-bottom: 32px;
-    }
+  @media (min-device-pixel-ratio: 2),
+    // new (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/icon-cow@2x-min.png');
+  }
 
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 40px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
 }
 
 .cow::before {
-    animation: 10s linear 0s normal none infinite running cow;
+  animation: 10s linear 0s normal none infinite running cow;
 }
 
-@keyframes cow{
-    0% {
-        transform: rotate(0deg);
-    }
+@keyframes cow {
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
-
-}
-
-.weight::before {
-    content: url('../images/weight.png');
-    display: block;
-    margin-bottom: 16px;
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: 32px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 40px;
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .weight::before {
-    animation: 10s linear 0s normal none infinite running weight;
+  //   content: url('../images/weight.png');
+  content: '';
+  background-image: url('../images/icon-weight@1x-min.png'); // new
+  background-size: 50px 50px; // new
+  display: block;
+  margin-left: auto; // new
+  margin-right: auto; // new
+  margin-bottom: 16px;
+  width: 50px; // new
+  height: 50px; // new
+
+  @media (min-device-pixel-ratio: 2),
+    // new (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/icon-weight@2x-min.png');
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
+}
+
+.weight::before {
+  animation: 10s linear 0s normal none infinite running weight;
 }
 
 @keyframes weight {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
-
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .ice-crema::before {
-    content: url('../images/ice-crema.png');
-    display: block;
-    margin-bottom: 16px;
+  //   content: '../images/ice-crema.png';
+  content: '';
+  background-image: url('../images/icon-icecrema@1x-min.png'); // new
+  background-size: 50px 50px; // new
+  display: block;
+  margin-right: auto; // new
+  margin-left: auto; // new
+  margin-bottom: 16px;
+  width: 50px; // new
+  height: 50px; // new
 
-    @media screen and (min-width: 768px) {
-        margin-bottom: 32px;
-    }
+  @media (min-device-pixel-ratio: 2),
+    // new \ (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/icon-icecrema@2x-min.png');
+  }
 
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 40px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
 }
 
 .ice-crema::before {
-    animation: 10s linear 0s normal none infinite running ice-crema;
+  animation: 10s linear 0s normal none infinite running ice-crema;
 }
 
 @keyframes ice-crema {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
-
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .advantages__descr {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.7;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  text-align: center;
+  color: $main-text-color;
+
+  @media screen and (min-width: 768px) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.74;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.76;
     text-align: center;
-    color: $main-text-color;
-
-    
-
-    @media screen and (min-width: 768px) {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.74;
-    }
-
-    @media screen and (min-width: 1200px) {
-        font-size: 16px;
-        line-height: 1.76;
-        text-align: center;
-        letter-spacing: 0.02em;
-    }
+    letter-spacing: 0.02em;
+  }
 }
-
-
-
-
-
