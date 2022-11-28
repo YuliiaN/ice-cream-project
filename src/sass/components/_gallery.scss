@@ -1,167 +1,173 @@
 .gallery {
-    background-image: url('../images/iceсream-gall-mob-1x.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-image: url('../images/iceсream-gall-mob-1x.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-    @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        .gallery {
-          background-image: url('../images/icecream-gall-mob-2x.jpg');
-        }
-      }
-      @media screen and (min-width: 768px) {
-        .gallery {
-            background-image: url('../images/icecream-gall-tab-1x.jpg');
-        }
-      }
-      @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-        .gallery {
-          background-image: url('../images/icecream-gall-tab-2x.jpg');
-        }
-      }
-      @media screen and (min-width: 1200px) {
-        .gallery {
-            background-image: url('../images/icecream-gall-desk-1x.jpg');
-        }
-      }
-      @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-        .gallery {
-          background-image: url('../images/icecream-gall-desk-2x.jpg');
-        }
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .gallery {
+    background-image: url('../images/icecream-gall-mob-2x.jpg');
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    background-image: url('../images/icecream-gall-tab-1x.jpg');
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .gallery {
+    background-image: url('../images/icecream-gall-tab-2x.jpg');
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    background-image: url('../images/icecream-gall-desk-1x.jpg');
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .gallery {
+    background-image: url('../images/icecream-gall-desk-2x.jpg');
+  }
 }
 
-.swiper-pagination .swiper-pagination-bullet{
-    background-color: $main-background-color;
-    width: 15px;
-    height: 15px;
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: $main-background-color;
+  width: 15px;
+  height: 15px;
 }
 
 .gallery {
-    padding-bottom: 393px;
-    
-    @media screen and (min-width: 768px){
-      padding-bottom: 379px;
-    }
+  padding-bottom: 393px;
 
-    @media screen and (min-width: 1200px){
-      padding-bottom: 228px;
-      
-     }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 379px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 228px;
+  }
 }
 
- .ice {
-    width: 100%;
-    margin: 0 auto;
-    border-radius: 8px;
-    top: -32px;
-    margin-bottom: -32px;
+.ice {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 8px;
+  top: -32px;
+  margin-bottom: -32px;
 
+  @media screen and (min-width: 480px) {
+    height: 200px;
+    width: 440px;
+    border-radius: 12px;
+  }
 
-    @media screen and (min-width: 480px) {
-      height: 200px;
-      width: 440px;
-      border-radius: 12px;
-    }
+  @media screen and (min-width: 768px) {
+    height: 327px;
+    width: 704px;
+    border-radius: 18px;
+    top: -145px;
+    margin-bottom: -145px;
+  }
 
-    @media screen and (min-width: 768px) {
-      height: 327px;
-      width: 704px;
-      border-radius: 18px;
-      top: -145px;
-      margin-bottom: -145px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      height: 422px;
-      width: 1013px;
-      border-radius: 24px;
-      top: -100px;
-      margin-bottom: -100px;
-    }
+  @media screen and (min-width: 1200px) {
+    height: 422px;
+    width: 1013px;
+    border-radius: 24px;
+    top: -100px;
+    margin-bottom: -100px;
+  }
 }
 
 .reviews {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    margin-top: 80px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 80px;
 
-    @media screen and (min-width: 480px){
-      width: 440px;
-      height: 400px;
-      } 
-    
-    @media screen and (min-width: 768px){
-      margin-top: 100px;
-      width: 705px;
-      height: 361px;
-      
-      } 
-
-    @media screen and (min-width: 1200px){
-      margin-top: 140px;
-      width: 968px;
-      height: 361px;
-      
-      }
+  @media screen and (min-width: 480px) {
+    width: 440px;
+    height: 400px;
   }
 
-.swiper-slide {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-     }
-
-.swiper-slide__img {
-    width: 85px;
-    height: 85px;
-    border-radius: 50%;
+  @media screen and (min-width: 768px) {
+    margin-top: 100px;
+    width: 705px;
+    height: 361px;
   }
 
-.swiper-slide__paragraf {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 32px;
-    font-family: $font-family;
-    padding-bottom: 12px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 140px;
+    width: 968px;
+    height: 361px;
   }
-
-.swiper-slide__text{
-    padding: 35px 39px;
-    border-radius: 10px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 2.55em;
-    background-color: $main-background-color;
-    margin-bottom: 32px;
-
-    @media screen and (min-width:768px){
-      padding: 28px 80px;
-      height: 138px;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.86em;
-      letter-spacing: 0.04em;
-      border-radius: 18px;
-      }
-
-    @media screen and (min-width:1200px){
-      padding: 43px 109px;
-      font-size: 16px;
-      height: 138px;
-      border-radius: 24px;
-    }
 }
 
-  .swiper-slide__address {
-    color: $second-text-color;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.86em;
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
 
-    @media screen and (min-width:768px){
+.swiper-slide__img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+}
+
+.swiper-slide__text {
+  min-width: 280px;
+  height: 256px;
+  padding: 35px 39px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2.55em;
+  text-align: center;
+
+  background-color: $main-background-color;
+  border-radius: 10px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 705px;
+    height: 138px;
+    padding: 28px 80px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86em;
+    letter-spacing: 0.04em;
+    border-radius: 18px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 968px;
+    padding: 43px 109px;
     font-size: 16px;
-    }
+    height: 138px;
+    border-radius: 24px;
+  }
+}
+
+.swiper-slide__address {
+  color: $second-text-color;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86em;
+
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 }
