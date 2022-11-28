@@ -5,17 +5,33 @@
     <div class="about-block">
       <div class="about-images">
         <img
-          class="about-img"
-          srcset="./images/1x.png 1x, ./images/2x.png 2x"
-          src="./images/1x.png"
-          alt="Photo of cow"
+          class="about-img--yellow"
+          srcset="
+            ./images/yellow-mob@1x-min.png     313w,
+            ./images/yellow-mob@2x-min.png     626w,
+            ./images/yellow-tablet@1x-min.png  376w,
+            ./images/yellow-tablet@2x-min.png  752w,
+            ./images/yellow-desk@1x-min.png    546w,
+            ./images/yellow-desk@2x-min.png   1092w
+          "
+          sizes="(min-width:1200px) 500px, (min-width:768px) 336px, (min-width:320px) 279px, 100vw"
+          src="./images/yellow1x.png"
+          alt="yellow circle"
           width="279"
         />
         <img
-          class="about-img--yellow"
-          srcset="./images/yellow1x.png 1x, ./images/yellow2x.png 2x"
-          src="./images/yellow1x.png"
-          alt="yellow circle"
+          class="about-img"
+          srcset="
+            ./images/cow-mob@1x-min.png    279w,
+            ./images/cow-mob@2x-min.png    558w,
+            ./images/cow-tablet@1x-min.png 336w,
+            ./images/cow-tablet@2x-min.png 672w,
+            ./images/cow-desk@1x-min.png   490w,
+            ./images/cow-desk@2x-min.png   980w
+          "
+          sizes="(min-width:1200px) 490px, (min-width:768px) 336px, (min-width:320px) 279px, 100vw"
+          src="./images/1x.png"
+          alt="Photo of cow"
           width="279"
         />
       </div>
