@@ -164,10 +164,6 @@
 .btn-buy-now {
   display: block;
   margin: 0 auto;
-  &:hover,
-  &:focus {
-    transform: scale(1);
-  }
 }
 
 .order__form {

@@ -147,11 +147,13 @@
   fill: currentColor;
 
   @include transitionM(color);
+  @include transitionM(transform);
 
   &:hover,
   &:focus {
     color: $main-text-color;
     fill: currentColor;
+    transform: scale(1.3);
   }
 }
 
