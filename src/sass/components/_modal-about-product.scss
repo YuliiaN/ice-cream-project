@@ -62,8 +62,6 @@
   background-color: transparent;
   @include transitionM(color);
 
-  cursor: pointer;
-
   &:hover,
   &:focus {
     color: $button-color;
@@ -74,8 +72,6 @@
   fill: currentColor;
   width: 24px;
   height: 24px;
-
-  cursor: pointer;
 }
 
 .about-product__title {

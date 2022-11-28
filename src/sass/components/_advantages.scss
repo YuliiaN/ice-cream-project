@@ -51,7 +51,6 @@
 }
 
 .cow::before {
-  //   content: url('../images/cow.png');
   content: '';
   background-image: url('../images/icon-cow@1x-min.png'); // new
   background-size: 50px 50px; // new
@@ -63,7 +62,6 @@
   height: 50px; // new
 
   @media (min-device-pixel-ratio: 2),
-    // new (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url('../images/icon-cow@2x-min.png');
@@ -93,7 +91,6 @@
 }
 
 .weight::before {
-  //   content: url('../images/weight.png');
   content: '';
   background-image: url('../images/icon-weight@1x-min.png'); // new
   background-size: 50px 50px; // new

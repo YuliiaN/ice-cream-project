@@ -62,8 +62,6 @@
   background-color: transparent;
   border: none;
 
-  cursor: pointer;
-
   @include mq(tab) {
     width: 24px;
     height: 24px;
@@ -73,8 +71,6 @@
 .modal-cow__close-icon {
   width: 16px;
   height: 16px;
-
-  cursor: pointer;
 
   @include transitionM(fill);
 

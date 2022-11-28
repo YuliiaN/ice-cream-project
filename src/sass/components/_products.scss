@@ -426,13 +426,11 @@
   color: $second-text-color;
   border: none;
   background-color: transparent;
-  cursor: pointer;
 }
 
 .product__icon {
   fill: currentColor;
   transition: color 0.7s cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
 }
 
 // products card hover

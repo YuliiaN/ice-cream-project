@@ -35,8 +35,9 @@
   border: transparent;
   border-radius: 10px;
 
-  cursor: pointer;
   @include transitionM(transform);
+  @include transitionM(background-color);
+  @include transitionM(color);
 
   &:hover,
   &:focus {
@@ -58,6 +59,11 @@
   border: 2px solid $accent-color;
   padding: 12px 46px;
 
+  @include transitionM(background-color);
+  @include transitionM(color);
+  @include transitionM(border);
+  @include transitionM(border-color);
+
   &:hover,
   &:focus {
     background-color: transparent;
@@ -69,10 +75,6 @@
     outline: none;
     border: 2px solid $button-color;
   }
-
-  @include transitionM(background-color);
-  @include transitionM(color);
-  @include transitionM(border);
 }
 
 .btn--small {
@@ -126,8 +128,8 @@
 
   border: none;
 
-  cursor: pointer;
   @include transitionM(transform);
+  @include transitionM(color);
 
   &:hover {
     color: $button-color;
@@ -149,6 +151,4 @@
     font-size: 14px;
     line-height: 1.2;
   }
-
-  @include transitionM(color);
 }
