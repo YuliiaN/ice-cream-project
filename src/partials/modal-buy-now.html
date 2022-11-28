@@ -9,81 +9,89 @@
         <use href="./images/icons.svg#icon-close-modal"></use>
       </svg>
     </button>
-    <div class="order">
-      <p class="order__title">Buy now</p>
-      <div class="order-products">
-        <div class="products-modal-one">
-          <div class="img-modal__products-one">
-            <img
-              class="product-one"
-              src="./images/img-modal-full.png"
-              alt="icecream"
-              width="252"
-            />
-          </div>
-          <div class="product__icecream">ice cream</div>
+    <p class="order__title">Buy now</p>
+    <ul class="order-products">
+      <li class="products-modal-one">
+        <div class="img-modal__products-one">
+          <img
+            class="product-one"
+            srcset="
+              ./images/icecream-modal@1x-min.png 1x,
+              ./images/icecream-modal@2x-min.png 2x
+            "
+            alt="icecream"
+            width="252"
+          />
+          <div class="modal__circle modal__circle--one"></div>
         </div>
-        <div class="products-modal-second">
-          <div class="img-modal__products-second">
-            <img
-              class="product-second"
-              src="./images/img-modal-full-second.png"
-              alt="icecream"
-              width="252"
-            />
-          </div>
-          <div class="product__icecream product__icecream--second">
-            ice coffee
-          </div>
+        <div class="product__icecream">ice cream</div>
+      </li>
+      <li class="products-modal-second">
+        <div class="img-modal__products-second">
+          <img
+            class="product-second"
+            srcset="
+              ./images/icecream2-modal@1x-min.png 1x,
+              ./images/icecream2-modal@2x-min.png 2x
+            "
+            alt="icecream"
+            width="252"
+          />
+          <div class="modal__circle modal__circle--second"></div>
         </div>
-        <div class="products-modal-third">
-          <div class="img-modal__products-third">
-            <img
-              class="product-third"
-              src="./images/img-modal-full-third.png"
-              alt="icecream"
-              width="252"
-            />
-          </div>
-          <div class="product__icecream product__icecream--third">
-            milkshake
-          </div>
+        <div class="product__icecream product__icecream--second">
+          ice coffee
         </div>
+      </li>
+      <li class="products-modal-third">
+        <div class="img-modal__products-third">
+          <img
+            class="product-third"
+            srcset="
+              ./images/icecream3-modal@1x-min.png 1x,
+              ./images/icecream3-modal@2x-min.png 2x
+            "
+            alt="icecream"
+            width="252"
+          />
+          <div class="modal__circle modal__circle--third"></div>
+        </div>
+        <div class="product__icecream product__icecream--third">milkshake</div>
+      </li>
+    </ul>
+    <form class="order__form">
+      <div class="order__field">
+        <label for="name-order" class="order__label"></label>
+        <input
+          type="text"
+          class="order__input"
+          name="name"
+          id="name-order"
+          placeholder="Name"
+        />
       </div>
-      <form class="order__form">
-        <div class="order__field">
-          <label for="name-order" class="order__label"></label>
-          <input
-            type="text"
-            class="order__input"
-            name="name"
-            id="name-order"
-            placeholder="Name"
-          />
-        </div>
-        <div class="order__field">
-          <label for="phone-order" class="order__label"></label>
-          <input
-            type="tel"
-            class="order__input"
-            name="phone"
-            id="phone-order"
-            placeholder="Phone"
-          />
-        </div>
-        <div class="order__field order__field--margin">
-          <label for="feedback-order" class="order__label"></label>
-          <textarea
-            name="feedback"
-            id="feedback-order"
-            placeholder="Comment"
-            class="order__feedback"
-          ></textarea>
-        </div>
-        <div class="order__button">
-          <button type="submit" class="btn btn-buy-now">Submit</button>
-        </div>
-      </form>
-    </div>
+      <div class="order__field">
+        <label for="phone-order" class="order__label"></label>
+        <input
+          type="tel"
+          class="order__input"
+          name="phone"
+          id="phone-order"
+          placeholder="Phone"
+        />
+      </div>
+      <div class="order__field order__field--margin">
+        <label for="feedback-order" class="order__label"></label>
+        <textarea
+          name="feedback"
+          id="feedback-order"
+          placeholder="Comment"
+          class="order__feedback"
+        ></textarea>
+      </div>
+      <div class="order__button">
+        <button type="submit" class="btn btn-buy-now">Submit</button>
+      </div>
+    </form>
   </div>
 </div>

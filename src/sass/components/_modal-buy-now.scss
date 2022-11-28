@@ -19,35 +19,24 @@
   visibility: hidden;
 }
 
-.modal-buy.is-hidden-buy-now .order {
-  transform: translate(-50%, -50%) scale(1.1);
-}
-
 .form-buy-modal {
   position: absolute;
-  z-index: 100;
-  display: flex;
-  justify-content: right;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  overflow: auto;
+
+  min-width: 280px;
+  height: 90%;
   padding: 28px;
+
   background-color: $main-text-color;
   border-radius: 10px;
-  @include transitionM(transform);
   border: 2px solid $accent-color;
 
-  width: 280px;
-  overflow: auto;
-  height: 90%;
-
-  &::-webkit-scrollbar {
-    width: 5px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: $card-one-color;
-    border-radius: 10px;
+  @include mq(mob) {
+    width: 432px;
   }
 
   @include mq(tab) {
@@ -86,19 +75,6 @@
   height: 24px;
 
   cursor: pointer;
-}
-
-.order {
-  width: 200px;
-  margin: 0 auto;
-  height: 95%;
-  overflow: auto;
-  @include mq(tab) {
-    width: 500px;
-    height: auto;
-    margin: 0 auto;
-
-  }
 }
 
 .order__title {
@@ -193,11 +169,9 @@
   display: block;
   margin: 0 auto;
   &:hover,
-    &:focus {
-
-      transform: scale(1);
-    }
-
+  &:focus {
+    transform: scale(1);
+  }
 }
 
 .order__form {
@@ -208,6 +182,7 @@
 .order-products {
   width: 132px;
   margin: 0 auto;
+
   @include mq(tab) {
     display: flex;
     gap: 22px;
@@ -223,17 +198,52 @@
 .img-modal__products-second,
 .img-modal__products-third {
   position: absolute;
-  top: -120%;
-  transform: translateY(50%);
-  width: 180px;
-  left: -18%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 132px;
 }
 
-.product-one,
-.product-second,
-.product-third {
-  width: 180px;
-  height: auto;
+.modal__circle {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+
+  &--one {
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  }
+
+  &--second {
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+  }
+
+  &--third {
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+  }
 }
 
 .product__icecream {
